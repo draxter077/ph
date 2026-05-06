@@ -9,7 +9,7 @@ export default function link(n,id){
         }
         :responsive{
             margin:0px 5px;
-            font-size:14px;
+            font-size:16px;
             padding:1px 7px 1px;
         }
         ::after{
