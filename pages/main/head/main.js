@@ -1,0 +1,27 @@
+import logo from "./logo/main.js"
+import links from "./links/main.js"
+
+export default function head(){
+    let style = `
+        {
+            position:sticky;
+            top:0%;
+            
+            display:flex;
+            flex-direction:row;
+            align-items:center;
+            justify-content:space-around;
+            width:100%;
+            padding:10px 15px;
+            background:var(--colorBlue);
+            box-shadow:0px 0px 2px 1px var(--colorBlue);
+        }
+        :responsive{
+            flex-direction:column;
+        }`
+
+    const head = cE("div",style)
+    head.appendChild(logo())
+    head.appendChild(links())
+    return(head)
+}
