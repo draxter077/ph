@@ -76,7 +76,7 @@ const resetCss = `
     }
     @font-face{
         font-family:"Garet";
-        src:url("assets/font/Garet-Book.otf");
+        src:url("https://www.ph.net.br/assets/font/Garet-Book.otf");
     }
     body{
     	box-sizing:border-box;
@@ -186,7 +186,7 @@ window.construct = function construct(d){
     if(d == undefined){
         if(window.location.href.split("br/")[1] != undefined && window.location.href.split("br/")[1] != ""){
             let path = window.location.href.split("br/")[1]
-            root.appendChild(path)
+            root.innerHTML=path
             // if(path.split("?")[0] == "finalizarpagamento"){
             //     root.appendChild(finalizarpagamento(path.split("?")[1].split("&")[0]))
             // }
