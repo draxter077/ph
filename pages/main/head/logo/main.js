@@ -5,7 +5,8 @@ export default function logo(){
             border:2px solid var(--colorWhite);
         }
         :responsive{
-            height:60px;
+            height:70px;
+            margin:2.5% 0px;
         }`
 
     const logo = cE("img",style)

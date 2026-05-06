@@ -1,0 +1,29 @@
+export default function slogan(){
+    let style = `
+        {
+            position:relative;
+            width:fit-content;
+            font-size:40px;
+            color:var(--colorBlue);
+            padding:0px 40px 20px;
+        }
+        ::after{
+            position:absolute;
+            bottom:0%;
+            left:0%;
+            content:"";
+            width:0%;
+            height:2px;
+            background:var(--colorBlue);
+            animation:movingDot 2s ease-in-out 0s infinite alternate;
+        }
+        @keyframes movingDot{
+            0%[left:0%;width:0%;]
+            40%[left:40%;width:20%;]
+            100%[left:100%;width:0%;]
+        }`
+
+    const slogan = cE("div",style)
+    slogan.innerHTML = "Transformamos sua ideia<br>em uma realidade no mundo digital"
+    return(slogan)
+}
