@@ -186,18 +186,19 @@ window.construct = function construct(d){
     if(d == undefined){
         if(window.location.href.split("br/")[1] != undefined && window.location.href.split("br/")[1] != ""){
             let path = window.location.href.split("br/")[1]
-            if(path.split("?")[0] == "finalizarpagamento"){
-                root.appendChild(finalizarpagamento(path.split("?")[1].split("&")[0]))
-            }
-            else if(path == "cliente"){
-                root.appendChild(client())
-            }
-            else if(path == "admin"){
-                root.appendChild(admin())
-            }
-            else{
-                root.appendChild(main())
-            }
+            root.appendChild(path)
+            // if(path.split("?")[0] == "finalizarpagamento"){
+            //     root.appendChild(finalizarpagamento(path.split("?")[1].split("&")[0]))
+            // }
+            // else if(path == "cliente"){
+            //     root.appendChild(client())
+            // }
+            // else if(path == "admin"){
+            //     root.appendChild(admin())
+            // }
+            // else{
+            //     root.appendChild(main())
+            // }
         }
         else{
             root.appendChild(main())

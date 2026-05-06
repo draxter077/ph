@@ -8,7 +8,7 @@ export default function foot(){
             align-items:center;
             width:100%;
             height:fit-content;
-            background:var(--colorBlack);
+            background:var(--colorBlue);
         }`
 
     const foot = cE("div",style)
