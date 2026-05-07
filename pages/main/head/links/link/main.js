@@ -2,14 +2,15 @@ export default function link(n,id){
     let style = `
         {
             position:relative;
-            font-size:18px;
+            font-size:21px;
             padding:2px 7px 2px;
+            margin:0px 0px 0px 10px;
             color:var(--colorWhite);
             cursor:pointer;
         }
         :responsive{
             margin:0px 5px;
-            font-size:16px;
+            font-size:18px;
             padding:1px 7px 1px;
         }
         ::after{

@@ -1,4 +1,5 @@
 import slogan from "./slogan/main.js"
+import button from "./button/main.js"
 
 export default function outdoor(){
     let style = `
@@ -10,10 +11,15 @@ export default function outdoor(){
             width:90%;
             background:var(--colorWhite);
             text-align:center;
-            padding:5% 0px;
+            padding:7.5% 0px;
+        }
+        :responsive{
+            width:95%;
+            padding:30% 0px;
         }`
 
     const outdoor = cE("div",style)
     outdoor.appendChild(slogan())
+    outdoor.appendChild(button())
     return(outdoor)
 }

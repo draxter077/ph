@@ -7,6 +7,9 @@ export default function slogan(){
             color:var(--colorBlue);
             padding:0px 40px 20px;
         }
+        :responsive{
+            font-size:28px;
+        }
         ::after{
             position:absolute;
             bottom:0%;

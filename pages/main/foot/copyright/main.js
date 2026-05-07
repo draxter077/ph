@@ -2,8 +2,8 @@ export default function copyright(){
     let style = `
         {
             font-size:15px;
-            padding:15px;
             color:var(--colorWhite);
+            margin:20px 0px 0px 0px;
         }`
 
     const copyright = cE("div",style)

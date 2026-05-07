@@ -73,6 +73,7 @@ const resetCss = `
     	--colorWhite:rgb(245,245,245);
     	--colorBlack:rgb(20,20,20);
         --colorBlue:rgb(56,182,255);
+        --colorGreenWhatsApp:rgb(37,211,102);
     }
     @font-face{
         font-family:"Garet";
@@ -211,6 +212,8 @@ window.construct = function construct(d){
 }
 
 window.api_url = "https://ace-chimp-merry.ngrok-free.app/ph"
+window.whatsapp_url = "https://wa.me"
+window.instagram_url = "https://www.instagram.com/phwebsoftware"
 axios.defaults.headers.common["ngrok-skip-browser-warning"] = "69420"
 
 window.stringifyNumber = function stringifyNumber(n){
