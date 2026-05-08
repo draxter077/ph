@@ -109,7 +109,7 @@ const resetCss = `
         padding:0px;
         margin:0px;
     }`
-document.getElementsByTagName("style")[0].innerHTML = resetCss.replaceAll("\n","").replaceAll("\t","").replaceAll(" ","")
+document.getElementsByTagName("style")[1].innerHTML = resetCss.replaceAll("\n","").replaceAll("\t","").replaceAll(" ","")
 
 window.cE = function cE(t, stl){
     function addClass(){
@@ -120,7 +120,7 @@ window.cE = function cE(t, stl){
         // Separa os parâmetros do estilo principal
         stls = stl.replaceAll("{","").split("}")[0].split(";") // "atr:value"... o último elemento é "" devido ao split
         // Organiza os estilos já salvos na tag style
-        let stylesInTag = document.getElementsByTagName("style")[0].innerHTML
+        let stylesInTag = document.getElementsByTagName("style")[1].innerHTML
         stylesInTag = stylesInTag.split("}") // .name{atr:value além do resetCss
         // Separa os nomes dos pares de atributos
         let classNamesInTag = []
@@ -138,7 +138,7 @@ window.cE = function cE(t, stl){
             if(boo != -1){classNames += ` ${classNamesInTag[boo]}`}
             else{
                 let cn = randomName(classNamesInTag)
-                document.getElementsByTagName("style")[0].innerHTML += `.${cn}{${stls[i]};}`
+                document.getElementsByTagName("style")[1].innerHTML += `.${cn}{${stls[i]};}`
                 classNames += ` ${cn}`
             }
         }
@@ -148,19 +148,19 @@ window.cE = function cE(t, stl){
                 let spec = stl.split("}")[i]
                 // Encontra o tipo do específico e busca por similares
                 if(spec.split(" ")[0] == "@keyframes"){
-                    document.getElementsByTagName("style")[0].innerHTML += spec.replaceAll("[","{").replaceAll("]","}") + "}"
+                    document.getElementsByTagName("style")[1].innerHTML += spec.replaceAll("[","{").replaceAll("]","}") + "}"
                 }
                 else if(spec.split("{")[0] == ":responsive"){ // CONTINUAR DESENVOLVENDO
                     let stlsR = spec.split("{")[1].split(";")
                     for(let k = 0; k < stlsR.length - 1; k++){
                         let cn = randomName(classNamesInTag)
-                        document.getElementsByTagName("style")[0].innerHTML += `@media screen and (max-width:1000px){.${cn}{${stlsR[k]};}}`
+                        document.getElementsByTagName("style")[1].innerHTML += `@media screen and (max-width:1000px){.${cn}{${stlsR[k]};}}`
                         classNames += ` ${cn}`
                     }
                 }
                 else if(spec.split("{")[0].split("::").length > 0){ // CONTINUAR DESENVOLVENDO
                     let cn = randomName(classNamesInTag)
-                    document.getElementsByTagName("style")[0].innerHTML += `.${cn}${spec}}`
+                    document.getElementsByTagName("style")[1].innerHTML += `.${cn}${spec}}`
                     classNames += ` ${cn}`
                 }
                 else if(spec.split("{")[0].split(":").length > 1){ // CONTINUAR DESENVOLVENDO
@@ -168,7 +168,7 @@ window.cE = function cE(t, stl){
                     let stlsX = spec.split("{")[1].split(";")
                     for(let k = 0; k < stlsX.length - 1; k++){
                         let cn = randomName(classNamesInTag)
-                        document.getElementsByTagName("style")[0].innerHTML += `.${cn}:${xPseudo}{${stlsX[k]};}`
+                        document.getElementsByTagName("style")[1].innerHTML += `.${cn}:${xPseudo}{${stlsX[k]};}`
                         classNames += ` ${cn}`
                     }
                 }
@@ -268,3 +268,8 @@ window.datetime = function datetime(ms){
 }
 
 construct()
+
+let l = document.getElementById("loading")
+l.style.opacity = 0
+await new Promise(resolve => setTimeout(resolve, 1100))
+document.body.removeChild(l)
