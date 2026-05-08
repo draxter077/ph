@@ -23,11 +23,10 @@ export default function plan(p){
             box-shadow:0px 0px 10px 0px var(--colorBlue);
         }`
 
-    const plan = cE("a",style)
+    const plan = cE("div",style)
     plan.appendChild(title(p.title))
     plan.appendChild(description(p.description))
     plan.appendChild(items(p.items))
     plan.appendChild(price(p.price))
-    plan.href = "https://www.ph.net.br/"
     return(plan)
 }

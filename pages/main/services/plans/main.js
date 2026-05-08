@@ -23,8 +23,9 @@ export default function plans(){
             items:[
                 {img:"/assets/icons/domain.png",text:"Domínio .br"},
                 {img:"/assets/icons/www.png",text:"Site profissional"},
-                {img:"/assets/icons/email.png",text:"E-mail corporativo para 5 usuários"},
+                {img:"/assets/icons/email.png",text:"E-mail corporativo"},
                 {img:"/assets/icons/refresh.png",text:"Atualizações ilimitadas"},
+                {img:"/assets/icons/settings.png",text:"Suporte disponível 24/7"}
             ],
             price:"Mensal de R$ <span>199,99</span>"
         }
@@ -36,6 +37,7 @@ export default function plans(){
             items:[
                 {img:"/assets/icons/domain.png",text:"Domínio .br por 1 ano"},
                 {img:"/assets/icons/www.png",text:"Site profissional"},
+                {img:"/assets/icons/refresh.png",text:"Até 3 atualizações"}
             ],
             price:"A partir de R$ <span>1.599,99</span>"
         }

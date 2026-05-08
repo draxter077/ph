@@ -1,0 +1,6 @@
+setores [mkt, financeiro, RH (gestão de atividades, acessos), vendas, estoques/insumos, compras, logística, produção]
+email
+calendário
+atividades
+
+api SQL

@@ -14,7 +14,6 @@ export default function questions(){
 
     const questions = cE("div",style)
     let qs = [
-        {question:"Quanto tempo leva para criar meu site?",answer:"Sites do Plano Completo levam até 10 dias úteis<br>Já os demais planos têm tempo de entrega em até 30 dias úteis"},
         {question:"O site terá integração com redes sociais e WhatsApp?",answer:"Sim. Incluímos botões flutuantes para contacto direto via WhatsApp, links para suas redes sociais e, se desejar, podemos configurar a exibição automática das suas últimas publicações do Instagram diretamente no site, aumentando o engajamento entre as plataformas"},
         {question:"É possível criar um blog dentro do meu site institucional?",answer:"Sim, e nós recomendamos muito! Um blog é uma ferramenta poderosa de marketing de conteúdo que ajuda a atrair visitantes através do Google. O sistema de blog já vem integrado e configurado para que você possa publicar seus artigos de forma simples e organizada"},
         {question:"Vocês instalam ferramentas de análise de dados (como o Google Analytics)?",answer:"Sim. Configuramos as principais ferramentas de rastreio, como Google Analytics e Google Search Console. Com elas, você poderá acompanhar quantos visitantes o site recebe, de onde eles vêm e quais páginas são as mais acessadas, permitindo decisões baseadas em dados reais"},

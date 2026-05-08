@@ -1,0 +1,6 @@
+clientes com informaõa de ncpj, nome, email, contato, plano, etc, excluir
+faturamento + aprovar (api cria todo mês)
+novos pedidos pelo site
+email
+
+design worph com menu lateral
