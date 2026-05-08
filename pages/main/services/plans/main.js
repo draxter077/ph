@@ -42,9 +42,11 @@ export default function plans(){
     ))
     plans.appendChild(plan(
         {
-            title:"Sistema corporativo",
+            title:"Soluções corporativas",
             description:"Para necessidades robustas",
-            items:[],
+            items:[
+                {img:"/assets/icons/www.png",text:"Desenvolvemos softwares empresariais do tipo CRM, ERP, e-commerce, BI, SAE, SAD, SIE, SCM, entre outros"},
+            ],
             price:"<span>Entre em contato</span>"
         }
     ))

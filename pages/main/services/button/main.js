@@ -15,7 +15,7 @@ export default function button(){
             transition:all 0.5s;
         }
         :hover{
-            transform:scale(1.05);
+            transform:translateX(5%);
         }
         :responsive{
             width:80%;
