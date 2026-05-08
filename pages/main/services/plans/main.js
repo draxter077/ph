@@ -27,7 +27,7 @@ export default function plans(){
                 {img:"/assets/icons/refresh.png",text:"Atualizações ilimitadas"},
                 {img:"/assets/icons/settings.png",text:"Suporte disponível 24/7"}
             ],
-            price:"Mensal de R$ <span>199,99</span>"
+            price:"Mensal de R$ <span>229,99</span>"
         }
     ))
     plans.appendChild(plan(
