@@ -2,6 +2,7 @@ export default function link(href, t){
     let style = `
         {
             font-size:14px;
+            font-weight:900;
             color:var(--colorWhite);
             border-bottom:1px solid var(--colorWhite);
             padding:0px 5px;

@@ -2,6 +2,7 @@ export default function copyright(){
     let style = `
         {
             font-size:15px;
+            font-weight:900;
             color:var(--colorWhite);
             margin:20px 0px 0px 0px;
         }`

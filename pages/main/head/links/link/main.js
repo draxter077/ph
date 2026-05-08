@@ -3,6 +3,7 @@ export default function link(n,id){
         {
             position:relative;
             font-size:21px;
+            font-weight:900;
             padding:2px 7px 2px;
             margin:0px 0px 0px 10px;
             color:var(--colorWhite);
