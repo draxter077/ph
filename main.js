@@ -78,6 +78,7 @@ const resetCss = `
     }
     @font-face{
         font-family:"Garet";
+        font-display:swap;
         src:url("https://www.ph.net.br/assets/font/Garet-Book.otf");
     }
     body{
