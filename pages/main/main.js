@@ -3,6 +3,7 @@ import outdoor from "./outdoor/main.js"
 import who from "./who/main.js"
 import services from "./services/main.js"
 import method from "./method/main.js"
+import faq from "./faq/main.js"
 import foot from "./foot/main.js"
 
 export default function main(){
@@ -53,6 +54,7 @@ export default function main(){
     main.appendChild(who())
     main.appendChild(services())
     main.appendChild(method())
+    main.appendChild(faq())
     main.appendChild(foot())
     return(main)
 }
