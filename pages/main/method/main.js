@@ -1,6 +1,5 @@
 import title from "./title/main.js"
 import items from "./items/main.js"
-import button from "./button/main.js"
 
 export default function method(){
     let style = `
@@ -10,8 +9,9 @@ export default function method(){
             align-items:center;
             width:90%;
             margin:5% 0px 0px 0px;
+            border-radius:5px;
             padding:20px 25px;
-            background:var(--colorBlue);
+            background:var(--colorDarkerBlue);
             box-shadow:0px 0px 3px 0px var(--colorBlue);
         }
         :responsive{
@@ -29,8 +29,7 @@ export default function method(){
         {img:"/assets/icons/responsive.png",title:"Design responsivo",description:"Para todos os clientes"},
         {img:"/assets/icons/code.png",title:"Leve e rápido",description:"Seu cliente não terá tempo de pensar na concorrência"},
         {img:"/assets/icons/marketing.png",title:"Gerador de tráfego orgânico",description:"Sua marca naturalmente sendo vista por quem você quer"},
-        {img:"/assets/icons/global.png",title:"Exatamente o que você precisava",description:"Você não precisa de mais uma dor de cabeça"}
+        {img:"/assets/icons/global.png",title:"Exatamente como você precisava",description:"Você não precisa de mais uma dor de cabeça"}
     ]))
-    method.appendChild(button())
     return(method)
 }

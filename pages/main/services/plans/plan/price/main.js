@@ -2,7 +2,7 @@ export default function price(p){
     let style = `
         {
             font-size:14px;
-            color:var(--colorBlack);
+            color:var(--colorWhite);
             text-align:right;
             border-top:1px solid var(--colorBlue);
             margin:10px 0px 0px 0px;

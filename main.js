@@ -73,6 +73,7 @@ const resetCss = `
     	--colorWhite:rgb(245,245,245);
     	--colorBlack:rgb(20,20,20);
         --colorBlue:rgb(56,182,255);
+        --colorDarkerBlue:rgb(20,30,40);
         --colorGreenWhatsApp:rgb(37,211,102);
     }
     @font-face{
@@ -82,7 +83,7 @@ const resetCss = `
     body{
     	box-sizing:border-box;
     	font-family:"Garet";
-    	background:var(--colorWhite);
+    	background:var(--colorBlack);
     	cursor:default;
 	    user-select:none;
         line-height:1.3;

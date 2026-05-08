@@ -7,10 +7,8 @@ export default function item(i){
             display:flex;
             flex-direction:column;
             align-items:flex-start;
-            border:1px solid var(--colorWhite);
+            border-top:1px solid var(--colorBlue);
             padding:10px 15px;
-            border-radius:15px;
-            margin:0px 0px 10px 0px;
             width:75%;
         }
         :responsive{

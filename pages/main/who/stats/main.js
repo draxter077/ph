@@ -8,7 +8,8 @@ export default function stats(){
             align-items:flex-start;
             justify-content:space-around;
             width:100%;
-            background:var(--colorBlue);
+            background:var(--colorDarkerBlue);
+            box-shadow:0px 0px 2px 0px var(--colorBlue);
             padding:2.5% 0px;
             margin:3% 0px 0px 0px;
         }

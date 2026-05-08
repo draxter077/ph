@@ -4,7 +4,7 @@ export default function slogan(){
             position:relative;
             width:fit-content;
             font-size:40px;
-            color:var(--colorBlue);
+            color:var(--colorWhite);
             padding:0px 40px 20px;
         }
         :responsive{
@@ -27,6 +27,6 @@ export default function slogan(){
         }`
 
     const slogan = cE("div",style)
-    slogan.innerHTML = "Transformamos sua ideia<br>em uma realidade no mundo digital"
+    slogan.innerHTML = "Somos especialistas em desenvolvimento web"
     return(slogan)
 }

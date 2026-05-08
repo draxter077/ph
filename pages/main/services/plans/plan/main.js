@@ -8,8 +8,9 @@ export default function plan(p){
         {
             display:flex;
             flex-direction:column;
-            box-shadow:0px 0px 2px 0px var(--colorBlack);
-            border-radius:5px;
+            background:var(--colorDarkerBlue);
+            box-shadow:0px 0px 3px 0px var(--colorBlue);
+            border-radius:10px;
             padding:10px 15px;
             width:30%;
         }

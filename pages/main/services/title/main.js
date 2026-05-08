@@ -2,14 +2,12 @@ export default function title(){
     let style = `
         {
             font-size:30px;
-            color:var(--colorBlack);
+            color:var(--colorWhite);
             text-align:right;
             width:100%;
         }
         >span{
-            background:var(--colorBlue);
-            padding:0px 5px;
-            color:var(--colorWhite);
+            color:var(--colorBlue);
         }
         :responsive{
             font-size:24px;

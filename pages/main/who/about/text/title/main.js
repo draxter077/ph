@@ -1,10 +1,8 @@
 export default function title(){
     let style = `
         {
-            font-size:32px;
-            color:var(--colorWhite);
-            background:var(--colorBlue);
-            padding:5px 10px;
+            font-size:30px;
+            color:var(--colorBlue);
         }
         :responsive{
             font-size:26px;
@@ -12,6 +10,6 @@ export default function title(){
         }`
 
     const title = cE("div",style)
-    title.innerHTML = `Somos especialistas em desenvolvimento web`
+    title.innerHTML = `Transformamos sua ideia em uma realidade no mundo digital`
     return(title)
 }

@@ -2,7 +2,7 @@ export default function description(d){
     let style = `
         {
             font-size:16px;
-            color:var(--colorBlack);
+            color:var(--colorWhite);
             line-height:1.0;
         }`
 

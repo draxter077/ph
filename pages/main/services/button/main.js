@@ -7,16 +7,15 @@ export default function button(){
             display:flex;
             flex-direction:row;
             align-items:center;
-            background:var(--colorBlue);
-            box-shadow:0px 0px 5px 0px var(--colorBlue);
+            justify-content:center;
+            background:var(--colorGreenWhatsApp);
             border-radius:50px;
             margin:5% 0px 0px 0px;
             padding:15px 10%;
             transition:all 0.5s;
         }
         :hover{
-            background:var(--colorGreenWhatsApp);
-            box-shadow:0px 0px 5px 0px var(--colorGreenWhatsApp);
+            transform:scale(1.05);
         }
         :responsive{
             width:80%;

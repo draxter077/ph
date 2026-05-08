@@ -1,13 +1,13 @@
 export default function description(d){
     let style = `
         {
-            font-size:18px;
-            margin:10px 0px 0px 0px;
-            color:var(--colorWhite);
+            font-size:16px;
+            color:var(--colorBlue);
             padding:0px 0px 0px 5%;
         }
         :responsive{
-            font-size:16px;
+            font-size:14px;
+            padding:0px 0px 0px 10%;
         }`
 
     const description = cE("div",style)

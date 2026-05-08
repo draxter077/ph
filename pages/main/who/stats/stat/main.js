@@ -7,8 +7,8 @@ export default function stat(v,a){
             display:flex;
             flex-direction:column;
             width:30%;
-            border-right:3px solid var(--colorWhite);
-            border-left:3px solid var(--colorWhite);
+            border-right:3px solid var(--colorBlue);
+            border-left:3px solid var(--colorBlue);
             padding:0px 10px;
         }
         :responsive{

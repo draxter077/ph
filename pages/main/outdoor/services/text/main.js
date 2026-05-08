@@ -1,14 +1,12 @@
 export default function text(){
     let style = `
         {
-            font-size:24px;
+            margin:0px 10px 0px 0px;
+            font-size:21px;
             color:var(--colorWhite);
-        }
-        :responsive{
-            font-size:20px;
         }`
-
+    
     const text = cE("div",style)
-    text.innerHTML = "Fale com a Ph"
+    text.innerHTML = "Sites"
     return(text)
 }

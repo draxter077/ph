@@ -1,5 +1,5 @@
 import slogan from "./slogan/main.js"
-import button from "./button/main.js"
+import services from "./services/main.js"
 
 export default function outdoor(){
     let style = `
@@ -9,7 +9,6 @@ export default function outdoor(){
             flex-direction:column;
             align-items:center;
             width:90%;
-            background:var(--colorWhite);
             text-align:center;
             padding:7.5% 0px;
         }
@@ -20,6 +19,6 @@ export default function outdoor(){
 
     const outdoor = cE("div",style)
     outdoor.appendChild(slogan())
-    outdoor.appendChild(button())
+    outdoor.appendChild(services())
     return(outdoor)
 }

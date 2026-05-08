@@ -3,6 +3,7 @@ export default function img(src){
         {
             height:24px;
             margin:0px 10px 0px 0px;
+            filter:invert(1);
         }`
 
     const img = cE("img",style)

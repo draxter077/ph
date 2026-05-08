@@ -4,6 +4,7 @@ export default function detail(){
             font-size:18px;
             margin:10px 0px 0px 0px;
             text-align:justify;
+            color:var(--colorWhite);
         }
         :responsive{
             font-size:16px;

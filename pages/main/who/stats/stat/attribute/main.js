@@ -2,7 +2,7 @@ export default function attribute(a){
     let style = `
         {
             font-size:21px;
-            color:var(--colorBlack);
+            color:var(--colorWhite);
         }
         :responsive{
             font-size:18px;

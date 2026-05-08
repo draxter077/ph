@@ -3,7 +3,6 @@ export default function img(){
         {
             height:40px;
             margin:0px 20px 0px 0px;
-            filter:invert(1);
         }
         :responsive{
             height:28px;
