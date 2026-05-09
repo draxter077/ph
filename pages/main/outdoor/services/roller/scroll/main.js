@@ -14,7 +14,7 @@ export default function scroll(){
     
     let svs = ["otimizados para Google",
         "focados em UX",
-        "para geração de leads",
+        "que geram leads",
         "com design responsivo",
         "leves e rápidos",
         "para tráfego orgânico",
@@ -34,7 +34,7 @@ export default function scroll(){
                 await new Promise(resolve => setTimeout(resolve, 600))
                 scroll.appendChild(text(c.innerHTML))
                 i += 1
-                await new Promise(resolve => setTimeout(resolve, 1500))
+                await new Promise(resolve => setTimeout(resolve, 1400))
             }
         }
     )

@@ -7,14 +7,17 @@ export default function services(){
             display:flex;
             flex-direction:row;
             align-items:flex-start;
-            background:var(--colorDarkerBlue);
-            padding:10px 15px;
-            border-radius:10px;
-            box-shadow:0px 0px 3px 0px var(--colorBlue);
-            margin:5% 0px 0px 0px;
+            height:40px;
+            font-size:32px;
+            margin:40px 0px 0px 0px;
+            padding:0px 15px;
+            border-left:1px solid var(--colorBlue);
+            border-right:1px solid var(--colorBlue);
         }
         :responsive{
-            margin:10% 0px 0px 0px;
+            margin:30px 0px 0px 0px;
+            font-size:18px;
+            height:25px;
         }`
 
     const services = cE("div",style)

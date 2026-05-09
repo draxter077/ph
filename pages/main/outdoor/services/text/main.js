@@ -2,7 +2,6 @@ export default function text(){
     let style = `
         {
             margin:0px 10px 0px 0px;
-            font-size:21px;
             color:var(--colorWhite);
         }`
     

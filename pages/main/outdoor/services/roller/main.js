@@ -3,7 +3,7 @@ import scroll from "./scroll/main.js"
 export default function roller(){
     let style = `
         {
-            height:28px;
+            height:100%;
             width:fit-content;
             overflow:hidden;
         }`
