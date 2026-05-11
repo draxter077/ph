@@ -25,7 +25,6 @@ export default function plan(p){
 
     const plan = cE("a",style)
     plan.href = p.href
-    plan.target = "_blank"
     plan.appendChild(title(p.title))
     plan.appendChild(description(p.description))
     plan.appendChild(items(p.items))
