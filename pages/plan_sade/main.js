@@ -56,7 +56,6 @@ export default function main(){
 
     let style = `
         {
-            position:relative;
             display:flex;
             flex-direction:column;
             align-items:center;

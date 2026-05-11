@@ -2,7 +2,7 @@ export default function text(t){
     let style = `
         {
             font-size:18px;
-            text-align:center;
+            text-align:justify;
             color:var(--colorWhite);
             width:100%;
             padding:2%;
