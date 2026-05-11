@@ -30,6 +30,8 @@ export default function resume(){
             if(e.style.transform == "translateX(-50%)"){ // página confirmação
                 e.style.transform = "translateX(-75%)"
                 p.style.width = "100%"
+                console.log(document.getElementById("inputs"))
+                console.log(document.getElementById("builderIframe"))
             }
             else if(e.style.transform == "translateX(-25%)"){ // página builder
                 let inputs = e.children[1].children[1].children
@@ -41,6 +43,11 @@ export default function resume(){
                     }
                 }
                 if(ws){
+                    const ifr = document.getElementById("builderIframe")
+                    const prompt = `Quero uma landing page de design moderno, com foco em geração de leads, exposição de autoridade. O nome da empresa é ${inputs[1].children[1].value}, do setor ${inputs[3].children[1].value}. Nosso público alvo é ${inputs[4].children[1].value}, e, com o site, temos o objetivo de ${inputs[5].children[1].value}`
+                    axios.post(`${api_url}/contract_plan_sade/builder`, {prompt:prompt,past_html:""})
+                        .then(r => {ifr.srcdoc = r.data.html;document.getElementById("builderChat").style = "opacity:1";})
+                        .catch(r => {ifr.srcdoc = `Error: ${r.response.response}`;console.log(r.response.response)})
                     e.style.transform = "translateX(-50%)"
                     p.style.width = "66%"
                 }

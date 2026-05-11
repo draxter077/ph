@@ -11,10 +11,12 @@ export default function forms(){
         }`
 
     const forms = cE("div",style)
+    forms.id = "inputs"
     const qs = [
         {title:"Nome do responsável pela empresa",placeholder:""},
         {title:"Nome da empresa",placeholder:""},
         {title:"CNPJ da empresa",placeholder:"12.345.678/1234-56"},
+        {title:"Setor da empresa",placeholder:""},
         {title:"Público-alvo pretendido",placeholder:"Homens, mulheres..."},
         {title:"Objetivos com o site",placeholder:"Gerar leads, aumentar visibilidade..."},
         {title:"Nomes de domínios pretendidos",placeholder:"dominio.com.br..."},

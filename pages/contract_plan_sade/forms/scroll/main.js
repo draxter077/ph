@@ -11,8 +11,6 @@ export default function scroll(){
             width:400%;
             height:100%;
             transition:all 0.5s;
-
-            transform:translateX(-50%);
         }`
 
     const scroll = cE("div",style)

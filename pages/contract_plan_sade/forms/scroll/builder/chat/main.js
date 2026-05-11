@@ -9,9 +9,13 @@ export default function chat(){
             height:100%;
             width:33%;
             margin:0px 0px 0px 5px;
+
+            opacity:0;
+            transition:all 0.5s;
         }`
 
     const chat = cE("div",style)
+    chat.id = "builderChat"
     chat.appendChild(inputs())
     chat.appendChild(input())
     return(chat)
