@@ -1,7 +1,7 @@
 import main from "./pages/main/main.js"
+import plan_sade from "./pages/plan_sade/main.js"
 import client from "./pages/client/main.js"
 import admin from "./pages/admin/main.js"
-import finalizarpagamento from "./pages/finalizarpagamento/main.js"
 
 export function randomName(names){
     const chars = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z", 
@@ -191,19 +191,12 @@ window.construct = function construct(d){
     if(d == undefined){
         if(window.location.href.split("br/")[1] != undefined && window.location.href.split("br/")[1] != ""){
             let path = window.location.href.split("br/")[1]
-            root.innerHTML=path
-            // if(path.split("?")[0] == "finalizarpagamento"){
-            //     root.appendChild(finalizarpagamento(path.split("?")[1].split("&")[0]))
-            // }
-            // else if(path == "cliente"){
-            //     root.appendChild(client())
-            // }
-            // else if(path == "admin"){
-            //     root.appendChild(admin())
-            // }
-            // else{
-            //     root.appendChild(main())
-            // }
+            if(path == "plano_completo"){
+                root.appendChild(plan_sade())
+            }
+            else{
+                root.appendChild(main())
+            }
         }
         else{
             root.appendChild(main())

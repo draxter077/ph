@@ -27,7 +27,8 @@ export default function plans(){
                 {img:"/assets/icons/refresh.png",text:"Atualizações ilimitadas"},
                 {img:"/assets/icons/settings.png",text:"Suporte disponível 24/7"}
             ],
-            price:"Mensal de R$ <span>259,99</span>"
+            price:"Mensal de R$ <span>259,99</span>",
+            href:"/plano_completo"
         }
     ))
     plans.appendChild(plan(
@@ -39,7 +40,8 @@ export default function plans(){
                 {img:"/assets/icons/www.png",text:"Site profissional"},
                 {img:"/assets/icons/refresh.png",text:"Até 3 atualizações"}
             ],
-            price:"A partir de R$ <span>1.599,99</span>"
+            price:"A partir de R$ <span>1.599,99</span>",
+            href:"/"
         }
     ))
     plans.appendChild(plan(
@@ -49,7 +51,8 @@ export default function plans(){
             items:[
                 {img:"/assets/icons/www.png",text:"Desenvolvemos softwares empresariais do tipo CRM, ERP, e-commerce, BI, SAE, SAD, SIE, SCM, entre outros"},
             ],
-            price:"<span>Entre em contato</span>"
+            price:"<span>Entre em contato</span>",
+            href:"/"
         }
     ))
     return(plans)

@@ -15,7 +15,7 @@ export default function sitemap(){
         }`
 
     const sitemap = cE("div",style)
+    sitemap.appendChild(link("https://www.ph.net.br/", "Página inicial"))
     sitemap.appendChild(link("https://www.ph.net.br/cliente", "Área do cliente"))
-    sitemap.appendChild(link("https://www.ph.net.br/plano_completo", "Plano Completo"))
     return(sitemap)
 }

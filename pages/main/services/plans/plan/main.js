@@ -23,7 +23,9 @@ export default function plan(p){
             box-shadow:0px 0px 10px 0px var(--colorBlue);
         }`
 
-    const plan = cE("div",style)
+    const plan = cE("a",style)
+    plan.href = p.href
+    plan.target = "_blank"
     plan.appendChild(title(p.title))
     plan.appendChild(description(p.description))
     plan.appendChild(items(p.items))

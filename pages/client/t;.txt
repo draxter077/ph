@@ -1,7 +1,6 @@
 status do doínio, site, email (usuários)
-permitir adicionar usuário ao email (notificação para nós)
+pedidos de suporte
 pagamentos (status)
-acesso ao email
 esitlo tipo worph com menu lateral
 
 cancelmanto do plano é direto conosco
