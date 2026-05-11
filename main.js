@@ -85,7 +85,7 @@ const resetCss = `
     }
     body{
     	box-sizing:border-box;
-    	font-family:"Garet";
+    	font-family:"Garet",system-ui;
     	background:var(--colorBlack);
     	cursor:default;
 	    user-select:none;

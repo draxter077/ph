@@ -4,11 +4,6 @@ export default function title(){
             font-size:30px;
             color:var(--colorWhite);
         }
-        >span{
-            background:var(--colorBlue);
-            padding:0px 5px;
-            color:var(--colorWhite);
-        }
         :responsive{
             font-size:24px;
             text-align:center;

@@ -3,6 +3,7 @@ export default function copyright(){
         {
             font-size:15px;
             font-weight:900;
+            text-align:center;
             color:var(--colorWhite);
             margin:20px 0px 0px 0px;
         }`
