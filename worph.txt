@@ -2,5 +2,6 @@ setores [mkt, financeiro, RH (gestão de atividades, acessos), vendas, estoques/
 email
 calendário
 atividades
+MOSTRATR DATA RJPA
 
 api SQL

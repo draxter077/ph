@@ -13,11 +13,46 @@ export default function questions(){
         }`
 
     const questions = cE("div",style)
+    const SD = {
+        "@context":"https://schema.org",
+        "@type":"FAQPage",
+        "mainEntity":[
+            {
+                "@type":"Question",
+                "name":"O site terá integração com redes sociais e WhatsApp?",
+                "acceptedAnswer":{
+                    "@type":"Answer",
+                    "text":"Sim. Incluímos botões flutuantes para contacto direto via WhatsApp, e links para suas redes sociais"
+                }
+            },
+            {
+                "@type":"Question",
+                "name":"É possível criar um blog dentro do meu site institucional?",
+                "acceptedAnswer":{
+                    "@type":"Answer",
+                    "text":"Sim, e nós recomendamos muito! Um blog é uma ferramenta poderosa de marketing de conteúdo que ajuda a atrair visitantes através do Google"
+                }
+            },
+            {
+                "@type":"Question",
+                "name":"Qual o diferencial de contratar uma agência em vez de usar criadores de sites?",
+                "acceptedAnswer":{
+                    "@type":"Answer",
+                    "text":"Criadores oferecem soluções genéricas, limitadas em SEO e que muitas vezes não pertencem a você. Se sua empresa não é como as outras, por que seu site deveria ser?"
+                }
+            }
+        ]
+        
+    }
+    const script = document.createElement('script')
+    script.type = 'application/ld+json'
+    script.text = JSON.stringify(SD)
+    document.head.appendChild(script)
+
     let qs = [
-        {question:"O site terá integração com redes sociais e WhatsApp?",answer:"Sim. Incluímos botões flutuantes para contacto direto via WhatsApp, links para suas redes sociais e, se desejar, podemos configurar a exibição automática das suas últimas publicações do Instagram diretamente no site, aumentando o engajamento entre as plataformas"},
-        {question:"É possível criar um blog dentro do meu site institucional?",answer:"Sim, e nós recomendamos muito! Um blog é uma ferramenta poderosa de marketing de conteúdo que ajuda a atrair visitantes através do Google. O sistema de blog já vem integrado e configurado para que você possa publicar seus artigos de forma simples e organizada"},
-        {question:"Vocês instalam ferramentas de análise de dados (como o Google Analytics)?",answer:"Sim. Configuramos as principais ferramentas de rastreio, como Google Analytics e Google Search Console. Com elas, você poderá acompanhar quantos visitantes o site recebe, de onde eles vêm e quais páginas são as mais acessadas, permitindo decisões baseadas em dados reais"},
-        {question:"Qual o diferencial de contratar uma agência em vez de usar criadores de sites gratuitos?",answer:"Criadores gratuitos oferecem soluções genéricas, limitadas em SEO e que muitas vezes não pertencem a você. Ao contratar nossa agência, você tem um projeto estratégico, código otimizado, design profissional e, principalmente, a propriedade total dos arquivos do seu site, além do suporte especializado de quem entende de conversão digital"}
+        {question:"O site terá integração com redes sociais e WhatsApp?",answer:"Sim. Incluímos botões flutuantes para contacto direto via WhatsApp, e links para suas redes sociais"},
+        {question:"É possível criar um blog dentro do meu site institucional?",answer:"Sim, e nós recomendamos muito! Um blog é uma ferramenta poderosa de marketing de conteúdo que ajuda a atrair visitantes através do Google"},
+        {question:"Qual o diferencial de contratar uma agência em vez de usar criadores de sites?",answer:"Criadores oferecem soluções genéricas, limitadas em SEO e que muitas vezes não pertencem a você. Se sua empresa não é como as outras, por que seu site deveria ser?"}
     ]
 
     for(let i = 0; i < qs.length; i++){

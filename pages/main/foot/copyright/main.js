@@ -8,6 +8,6 @@ export default function copyright(){
         }`
 
     const copyright = cE("div",style)
-    copyright.innerHTML = `Ph Web Software © ${new Date().getFullYear()} Todos os direitos reservados`
+    copyright.innerHTML = `62.797.808/0001-41 © ${new Date().getFullYear()} | Todos os direitos reservados`
     return(copyright)
 }
