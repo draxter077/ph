@@ -3,6 +3,7 @@ export default function iframe(){
         {
             height:100%;
             width:100%;
+            border-radius:5px;
             background:var(--colorWhite);
         }`
 

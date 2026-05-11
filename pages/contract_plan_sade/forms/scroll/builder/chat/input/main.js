@@ -10,6 +10,7 @@ export default function input(){
             justify-content:space-between;
             width:100%;
             padding:5px 10px;
+            border-radius:5px;
             background:var(--colorWhite);
         }`
 
