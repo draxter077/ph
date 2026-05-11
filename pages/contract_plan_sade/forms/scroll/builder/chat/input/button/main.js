@@ -32,7 +32,7 @@ export default function button(){
 
             await axios.post(`${api_url}/contract_plan_sade/builder`, {prompt:v,past_html:past_html})
                 .then(r => ifr.srcdoc = r.data.html)
-                .catch(r => {ifr.srcdoc = `Error: ${r.response}`;console.log(r.response)})
+                .catch(r => {ifr.srcdoc = `Error: ${r}`;console.log(r)})
 
             button.addEventListener("click", a)
         }

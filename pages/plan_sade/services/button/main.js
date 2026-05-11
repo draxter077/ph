@@ -23,7 +23,6 @@ export default function button(){
 
     const button = cE("a",style)
     button.href = "/plano_completo/pedido"
-    button.target = "_blank"
     button.appendChild(img())
     button.appendChild(text())
     return(button)
