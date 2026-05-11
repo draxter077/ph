@@ -13,6 +13,9 @@ export default function method(){
             padding:20px 25px;
             background:var(--colorDarkerBlue);
             box-shadow:0px 0px 3px 0px var(--colorBlue);
+            opacity:0;
+            transform:translateY(50%);
+            transition:all 0.5s;
         }
         :responsive{
             width:95%;
@@ -31,5 +34,17 @@ export default function method(){
         {img:"/assets/icons/marketing.png",title:"Gerador de tráfego orgânico",description:"Sua marca naturalmente sendo vista por quem você quer"},
         {img:"/assets/icons/global.png",title:"Exatamente como você precisava",description:"Você não precisa de mais uma dor de cabeça"}
     ]))
+
+    window.addEventListener(
+        "scroll",
+        async function a(){
+            let e = document.getElementById(method.id)
+            if(window.scrollY > e.offsetTop - window.innerHeight*0.7){
+                window.removeEventListener("scroll",a)
+                e.style.opacity = 1
+                e.style.transform = "translateY(0%)"
+            }
+        }
+    )
     return(method)
 }

@@ -10,6 +10,9 @@ export default function services(){
             align-items:center;
             width:90%;
             margin:5% 0px 0px 0px;
+            opacity:0;
+            transform:translateY(50%);
+            transition:all 0.5s;
         }
         :responsive{
             width:95%;
@@ -21,5 +24,17 @@ export default function services(){
     services.appendChild(title())
     services.appendChild(plans())
     services.appendChild(button())
+
+    window.addEventListener(
+        "scroll",
+        async function a(){
+            let e = document.getElementById(services.id)
+            if(window.scrollY > e.offsetTop - window.innerHeight*0.7){
+                window.removeEventListener("scroll",a)
+                e.style.opacity = 1
+                e.style.transform = "translateY(0%)"
+            }
+        }
+    )
     return(services)
 }
