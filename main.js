@@ -196,7 +196,7 @@ window.construct = function construct(d){
             else if(path == "plano_completo/pedido"){root.appendChild(contract_plan_sade())}
             else{root.appendChild(main())}
         }
-        else{root.appendChild(contract_plan_sade())}//main())}
+        else{root.appendChild(main())}
     }
     else{
         if(d.page == "client"){root.appendChild(client(d.data))}
