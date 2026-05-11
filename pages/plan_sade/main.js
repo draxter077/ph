@@ -46,14 +46,7 @@ export default function main(){
             "price":"259.99",
             "availability":"https://schema.org"
         },
-        "serviceType":"Desenvolvimento de Software dos tipos Web e de Gestão",
-        "aggregateRating":{
-            "@type":"AggregateRating",
-            "ratingValue":"4.8",
-            "reviewCount":"7",
-            "bestRating":"5",
-            "worstRating":"4.5"
-        }
+        "serviceType":"Desenvolvimento de Software dos tipos Web e de Gestão"
     }
     const script = document.createElement('script')
     script.type = 'application/ld+json'
