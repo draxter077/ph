@@ -5,11 +5,15 @@ export default function items(is){
         {
             display:flex;
             flex-direction:row;
+            justify-content:center;
             flex-wrap:wrap;
             background:var(--colorDarkerBlue);
             border-radius:5px;
             margin:20px 0px 0px 0px;
             padding:0px 5px;
+        }
+        :responsive{
+            flex-direction:column;
         }`
 
     const items = cE("div",style)

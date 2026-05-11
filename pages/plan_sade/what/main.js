@@ -7,6 +7,10 @@ export default function what(){
             flex-direction:column;
             align-items:center;
             width:100%;
+            margin:2.5% 0px 0px 0px;
+        }
+        :responsive{
+            margin:20% 0px 0px 0px;
         }`
 
     const what = cE("div",style)

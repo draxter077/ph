@@ -25,7 +25,7 @@ export default function plans(){
                 {img:"/assets/icons/www.png",text:"Site profissional"},
                 {img:"/assets/icons/email.png",text:"E-mail corporativo"},
                 {img:"/assets/icons/refresh.png",text:"Atualizações ilimitadas"},
-                {img:"/assets/icons/settings.png",text:"Suporte disponível 24/7"}
+                {img:"/assets/icons/settings.png",text:"Suporte técnico 24/7"}
             ],
             price:"Mensal de R$ <span>259,99</span>",
             href:"/plano_completo"

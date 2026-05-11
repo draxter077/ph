@@ -1,7 +1,7 @@
 import head from "./head/main.js"
 import outdoor from "./outdoor/main.js"
-import what from "./what/main.js"
 import services from "./services/main.js"
+import what from "./what/main.js"
 import method from "./method/main.js"
 import faq from "./faq/main.js"
 import foot from "./foot/main.js"
@@ -74,8 +74,8 @@ export default function main(){
     const main = cE("div",style)
     main.appendChild(head())
     main.appendChild(outdoor())
-    main.appendChild(what())
     main.appendChild(services())
+    main.appendChild(what())
     main.appendChild(method())
     main.appendChild(faq())
     main.appendChild(foot())

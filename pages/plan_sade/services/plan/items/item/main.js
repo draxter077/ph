@@ -8,6 +8,9 @@ export default function item(i){
             flex-direction:row;
             align-items:center;
             margin:15px;
+        }
+        :responsive{
+            margin:10px;
         }`
 
     const item = cE("div",style)
