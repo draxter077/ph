@@ -16,57 +16,6 @@ export default function plans(){
         }`
 
     const plans = cE("div",style)
-    const SD = {
-        "@context":"https://schema.org",
-        "@type":"Service",
-        "serviceType":"Desenvolvimento de websites profissionais e ferramentas de gestão",
-        "provider":{
-            "@type":"Organization",
-            "name":"Ph Web Software"
-        },
-        "description":"Soluções para empresas",
-        "hasOfferCatalog":{
-            "@type":"OfferCatalog",
-            "name":"Planos",
-            "itemListElement":[
-                {
-                    "@type":"Offer",
-                    "itemOffered":{
-                        "@type":"SoftwareApplication",
-                        "name":"Plano Completo",
-                        "description":"Domínio .br, site profissional, e-mail corporativo, atualizações ilimitadas, suporte disponível 24/7. Valor mensal"
-                    },
-                    "price":"259.99",
-                    "priceCurrency":"BRL"
-                },
-                {
-                    "@type":"Offer",
-                    "itemOffered":{
-                        "@type":"SoftwareApplication",
-                        "name":"Site avulso",
-                        "description":"Domínio .br por um ano, site profissional, até três atualizações. A partir de 1599,99"
-                    },
-                    "price":"1599.99",
-                    "priceCurrency":"BRL"
-                },
-                {
-                    "@type":"Offer",
-                    "itemOffered":{
-                        "@type":"SoftwareApplication",
-                        "name":"Soluções corporativas",
-                        "description":"Desenvolvemos softwares empresariais do tipo CRM, ERP, e-commerce, BI, SAE, SAD, SIE, SCM, entre outros. Entre em contato para orçamento"
-                    },
-                    "price":"5000.00",
-                    "priceCurrency":"BRL"
-                }
-            ]
-        }
-    }
-    const script = document.createElement('script')
-    script.type = 'application/ld+json'
-    script.text = JSON.stringify(SD)
-    document.head.appendChild(script)
-
     plans.appendChild(plan(
         {
             title:"Plano Completo",

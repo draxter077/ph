@@ -15,18 +15,18 @@ export default function main(){
         "url":"https://www.ph.net.br",
         "logo":"https://www.ph.net.br/assets/logo.jpg",
         "taxID":"62.797.808/0001-41",
-        "image":"ttps://www.ph.net.br/assets/logo.jpg",
+        "image":"https://www.ph.net.br/assets/logo.jpg",
         "email":"contato@ph.net.br",
         "telephone":"+55 (41) 99171-8360",
         "slogan":"Transformamos sua ideia em uma realidade no mundo digital",
         "description":"Focados em criação de sites profissionais, que expressem a identidade do seu projeto sem deixar de gerar resultado e conexão com seus clientes. Nossos sites são de alta performance, desenvolvidos segundo as últimas recomendações de SEO (Google) e UX (experiência de usuário) e otimizados para a geração de leads, fortalecendo o crescimento do seu negócio. Criamos sites para advogados, psicólogos, engenheiros, arquitetos, médicos, dentistas, contadores, consultores e qualquer outro negócio que queira fortalecer sua presença digital",
-        "areaServed":"BRA",
+        "areaServed":"BR",
         "address":{
             "@type":"PostalAddress",
             "streetAddress":"Rua Atílio Bório, 80",
             "addressLocality":"Curitiba",
             "addressRegion":"Paraná",
-            "addressCountry":"BRA",
+            "addressCountry":"BR",
             "postalCode":"80050-250"
         },
         "sameAs":[
