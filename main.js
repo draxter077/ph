@@ -196,7 +196,7 @@ window.construct = function construct(d){
             else if(path == "plano_completo/pedido"){root.appendChild(contract_plan_sade())}
             else{root.appendChild(main())}
         }
-        else{root.appendChild(main())}
+        else{root.appendChild(contract_plan_sade())}//main())}
     }
     else{
         if(d.page == "client"){root.appendChild(client(d.data))}
@@ -208,56 +208,6 @@ window.api_url = "https://ace-chimp-merry.ngrok-free.app/ph"
 window.whatsapp_url = "https://wa.me"
 window.instagram_url = "https://www.instagram.com/phwebsoftware"
 axios.defaults.headers.common["ngrok-skip-browser-warning"] = "69420"
-
-window.stringifyNumber = function stringifyNumber(n){
-    let numberParts = n.toString().split(".")
-    let integerPart = numberParts[0]
-    integerPart = integerPart.split("").reverse().join(""); // 1234 => 4321, para ficar mais fácil adicionar os pontos nas centenas
-    let newIntegerPart = "", newFractionalPart = ""    
-        
-    for(let i = 0; i < integerPart.length; i++){
-        newIntegerPart += integerPart[i]
-        if((i + 1)%3 == 0 && i != integerPart.length - 1 && n > 0){newIntegerPart += "."}
-    }
-    
-    if(numberParts.length > 1){ // Verifica se há casa decimal
-        newFractionalPart = (Math.floor(Number("0." + numberParts[1])*100)).toString() // Formata para dois algarismos significativos
-        if(newFractionalPart.length == 1){newFractionalPart = "0" + newFractionalPart} // Adciona o zero a esquerda caso menor do que 10
-    }
-    else{newFractionalPart = "00"} // Não havendo, atribui 00
-        
-    return(`R$ ${newIntegerPart.split("").reverse().join("")},${newFractionalPart}`)
-}
-
-window.datetime = function datetime(ms){
-    const dat = new Date(Number(ms))
-    let day = dat.getDate()
-    let month = dat.getMonth()
-    let year = dat.getFullYear()
-    let newDay, newMonth
-
-    if(day < 10){newDay = "0" + day}
-    else{newDay = day}
-
-    if(month < 9){newMonth = "0" + (month + 1)}
-    else{newMonth = month + 1}
-
-    let date = `${newDay}/${newMonth}/${year}`
-
-    let hour = dat.getHours()
-    let minutes = dat.getMinutes()
-    let newHour, newMinute
-
-    if(hour < 10){newHour = "0" + hour}
-    else{newHour = hour}
-
-    if(minutes < 10){newMinute = "0" + minutes}
-    else{newMinute = minutes}
-
-    let time = `${newHour}:${newMinute}`
-
-    return({date:date, time:time})
-}
 
 construct()
 
