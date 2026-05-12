@@ -1,21 +1,20 @@
 import text from "./text/main.js"
 import img from "./img/main.js"
 
+import window from "./window/main.js"
+
 export default function resume(){
     let style = `
         {
             display:flex;
             flex-direction:row;
             align-items:center;
-            padding:10px;
-            border-radius:10px;
-            background:var(--colorWhite);
             transform:translateX(0%);
             cursor:pointer;
             transition:all 0.5s;
         }
         :hover{
-            transform:translateX(10%);
+            transform:translateX(5%);
         }`
 
     const resume = cE("div",style)
@@ -27,14 +26,35 @@ export default function resume(){
         async function a(){
             const e = document.getElementById("forms").children[0]
             const p = document.getElementById("progress").children[0].children[0]
-            if(e.style.transform == "translateX(-50%)"){ // página confirmação
+            if(e.style.transform == "translateX(-75%)"){ // confirmação
+                resume.removeEventListener("click",a)
+
+                let inputs = document.getElementById("inputs").children
+                const body = {
+                    html:document.getElementById("builderIframe").srcdoc,
+                    email:inputs[0].children[1].value,
+                    whatsapp:inputs[1].children[1].value,
+                    name:inputs[2].children[1].value,
+                    CNPJ:inputs[3].children[1].value,
+                    sector:inputs[4].children[1].value,
+                    goals:inputs[5].children[1].value
+                }
+
+                let w = window(body)
+                document.getElementById("root").appendChild(w)
+                await new Promise(r => setTimeout(r,100))
+                w.style.opacity = 1
+            }
+            else if(e.style.transform == "translateX(-50%)"){ // página confirmação
+                resume.children[0].innerHTML = "Confirmar"
                 e.style.transform = "translateX(-75%)"
                 p.style.width = "100%"
-                console.log(document.getElementById("inputs"))
-                console.log(document.getElementById("builderIframe"))
+
+                let inputs = document.getElementById("inputs").children
+                e.children[3].innerHTML = e.children[3].innerHTML.replace("NOME_EMPRESA",inputs[2].children[1].value).replace("EMAIL",inputs[0].children[1].value).replace("WHATSAPP",inputs[1].children[1].value)
             }
             else if(e.style.transform == "translateX(-25%)"){ // página builder
-                let inputs = e.children[1].children[1].children
+                let inputs = document.getElementById("inputs").children
                 let ws = 1
                 for(let i = 0; i < inputs.length; i++){
                     if(inputs[i].children[1].value.length == 0){
@@ -45,9 +65,9 @@ export default function resume(){
                 if(ws){
                     const ifr = document.getElementById("builderIframe")
                     const prompt = `Quero uma landing page moderna. O nome da empresa é ${inputs[1].children[1].value}, do setor ${inputs[3].children[1].value}. Nosso público alvo é ${inputs[4].children[1].value}, e, com o site, temos o objetivo de ${inputs[5].children[1].value}`
-                    axios.post(`${api_url}/contract_plan_sade/builder`, {prompt:prompt,past_html:""})
-                        .then(r => {ifr.srcdoc = r.data.html;document.getElementById("builderChat").style = "opacity:1";})
-                        .catch(r => {ifr.srcdoc = `Error: ${r}`})
+                    //axios.post(`${api_url}/contract_plan_sade/builder`, {prompt:prompt,past_html:""})
+                    //    .then(r => {ifr.srcdoc = r.data.html;document.getElementById("builderChat").style = "opacity:1";})
+                    //    .catch(r => {ifr.srcdoc = `Error: ${r}`})
                     e.style.transform = "translateX(-50%)"
                     p.style.width = "66%"
                 }
@@ -59,6 +79,7 @@ export default function resume(){
                 }
             }
             else{ // página forms
+                resume.children[0].innerHTML = "Continuar"
                 e.style.transform = "translateX(-25%)"
                 p.style.width = "33%"
             }

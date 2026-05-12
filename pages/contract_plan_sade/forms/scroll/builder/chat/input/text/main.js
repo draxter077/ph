@@ -11,8 +11,9 @@ export default function text(){
         }`
     
     const text = cE("textarea",style)
-    text.lines = 2
-    text.placeholder = "Escreva aqui"
+    text.rows = 3
+    text.placeholder = "Escreva aqui o que deseja alterar\nQuando estiver satisfeito, clique em continuar"
+    text.tabIndex=-1
 
     text.addEventListener(
         "keypress",

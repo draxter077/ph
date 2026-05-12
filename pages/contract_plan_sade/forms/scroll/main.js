@@ -11,6 +11,9 @@ export default function scroll(){
             width:400%;
             height:100%;
             transition:all 0.5s;
+        }
+        >div{
+            padding:0.5%;
         }`
 
     const scroll = cE("div",style)

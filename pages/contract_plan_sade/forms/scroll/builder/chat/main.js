@@ -10,7 +10,7 @@ export default function chat(){
             width:33%;
             margin:0px 0px 0px 5px;
 
-            opacity:0;
+            opacity:1;
             transition:all 0.5s;
         }`
 

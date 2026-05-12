@@ -12,6 +12,6 @@ export default function question(q){
 
     const question = cE("div",style)
     question.appendChild(title(q.title))
-    question.appendChild(input(q.placeholder))
+    question.appendChild(input(q.title,q.placeholder))
     return(question)
 }

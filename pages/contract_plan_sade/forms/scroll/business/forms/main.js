@@ -13,14 +13,12 @@ export default function forms(){
     const forms = cE("div",style)
     forms.id = "inputs"
     const qs = [
-        {title:"Nome do responsável pela empresa",placeholder:""},
-        {title:"Nome da empresa",placeholder:""},
+        {title:"E-mail para contato",placeholder:"seunome@email.com.br"},
+        {title:"WhatsApp para contato",placeholder:"(00) 90000-0000"},
+        {title:"Nome da empresa",placeholder:"Empresa LTDA"},
         {title:"CNPJ da empresa",placeholder:"12.345.678/1234-56"},
-        {title:"Setor da empresa",placeholder:""},
-        {title:"Público-alvo pretendido",placeholder:"Homens, mulheres..."},
+        {title:"Setor da empresa",placeholder:"Advocacia, Psicologia, Medicina, Engenharia, Varejo..."},
         {title:"Objetivos com o site",placeholder:"Gerar leads, aumentar visibilidade..."},
-        {title:"Nomes de domínios pretendidos",placeholder:"dominio.com.br..."},
-        {title:"Usuários de e-mail pretendidos",placeholder:"usuario@dominio.com.br..."}
     ]
 
     for(let i = 0; i < qs.length; i++){forms.appendChild(question(qs[i]))}

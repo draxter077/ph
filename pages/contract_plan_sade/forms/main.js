@@ -6,9 +6,6 @@ export default function forms(){
             width:100%;
             height:100%;
             overflow:hidden;
-        }
-        >div>div{
-            padding:0.5%;
         }`
 
     const forms = cE("div",style)

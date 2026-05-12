@@ -1,4 +1,3 @@
-import back from "./back/main.js"
 import resume from "./resume/main.js"
 
 export default function buttons(){
@@ -7,12 +6,11 @@ export default function buttons(){
             display:flex;
             flex-direction:row;
             align-items:center;
-            justify-content:space-around;
+            justify-content:flex-end;
             width:90%;
         }`
 
     const buttons = cE("div",style)
-    buttons.appendChild(back())
     buttons.appendChild(resume())
     return(buttons)
 }

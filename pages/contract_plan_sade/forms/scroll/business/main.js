@@ -1,4 +1,5 @@
 import title from "./title/main.js"
+import description from "./description/main.js"
 import forms from "./forms/main.js"
 
 export default function business(){
@@ -12,6 +13,7 @@ export default function business(){
 
     const business = cE("div",style)
     business.appendChild(title())
+    business.appendChild(description())
     business.appendChild(forms())
     return(business)
 }

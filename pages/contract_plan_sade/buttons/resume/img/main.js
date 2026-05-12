@@ -1,10 +1,12 @@
 export default function img(){
     let style = `
         {
-            height:20px;
-            width:20px;
+            height:35px;
+            width:35px;
+            margin:0px 0px 0px 10px;
+            border-radius:30px;
             background:var(--colorWhite);
-            margin:0px 0px 0px 5px;
+            padding:5px;
             transform:rotate(270deg);
         }`
 
