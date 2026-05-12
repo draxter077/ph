@@ -8,12 +8,12 @@ export default function client(data){
         }`
 
     const client = cE("div", style)
-    if(data == undefined){
-        client.appendChild(login())
-    }
-    else{
+    if(data){
         axios.defaults.headers.common["userAuth"] = data.user.id
         client.appendChild(main(data))
+    }
+    else{
+        client.appendChild(login())
     }
     return(client)
 }

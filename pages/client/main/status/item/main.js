@@ -1,0 +1,20 @@
+import sign from "./sign/main.js"
+import text from "./text/main.js"
+
+export default function item(t,d){
+    let style = `
+        {
+            display:flex;
+            flex-direction:row;
+            align-items:center;
+            background:var(--colorDarkerBlue);
+            box-shadow:0px 0px 3px 0px var(--colorBlue);
+            border-radius:5px;
+            padding:10px 15px;
+        }`
+
+    const item = cE("div",style)
+    item.appendChild(sign())
+    item.appendChild(text(t,d))
+    return(item)
+}

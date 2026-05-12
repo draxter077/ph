@@ -1,15 +1,13 @@
 export default function logo(){
     let style = `
         {
-            height:150px;
-            border:3px solid var(--colorWhite);
-            box-shadow:0px 0px 3px 0px var(--colorWhite);
+            height:60px;
+            border:2px solid var(--colorWhite);
         }
         :responsive{
-            width:20%;
-            height:fit-content;
+            height:52px;
         }`
-        
+
     const logo = cE("img",style)
     logo.src = "/assets/logo.jpg"
     logo.alt = "Logotipo da Ph Web Software"

@@ -6,6 +6,9 @@ export default function foot(){
             width:100%;
             height:fit-content;
             padding:1%;
+        }
+        :responsive{
+            padding:2.5%;
         }`
 
     const foot = cE("div",style)
