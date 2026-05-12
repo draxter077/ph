@@ -11,6 +11,10 @@ export default function button(){
         }
         :hover{
             transform:translateX(20%) rotate(270deg);
+        }
+        :responsive{
+            height:20px;
+            width:20px;
         }`
 
     const button = cE("img",style)

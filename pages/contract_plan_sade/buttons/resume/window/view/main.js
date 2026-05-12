@@ -9,6 +9,10 @@ export default function view(b){
             box-shadow:0px 0px 3px 0px var(--colorWhite);
             border-radius:10px;
             overflow:hidden;
+        }
+        :responsive{
+            height:80%;
+            width:80%;
         }`
 
     const view = cE("div",style)

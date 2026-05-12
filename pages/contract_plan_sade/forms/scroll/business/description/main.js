@@ -4,6 +4,9 @@ export default function description(){
             font-size:21px;
             color:var(--colorWhite);
             margin:0px 0px 2.5% 0px;
+        }
+        :responsive{
+            font-size:16px;
         }`
 
     const description = cE("div",style)

@@ -10,6 +10,9 @@ export default function input(t,p){
         ::placeholder{
             font-style:italic;
         }
+        :responsive{
+            font-size:14px;
+        }
         @keyframes inputError{
             0%[background:var(--colorWhite);]
             50%[background:rgb(196,51,31);]

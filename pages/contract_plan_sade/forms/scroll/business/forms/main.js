@@ -8,6 +8,9 @@ export default function forms(){
             justify-content:space-around;
             flex-wrap:wrap;
             width:100%;
+        }
+        :responsive{
+            flex-direction:column;
         }`
 
     const forms = cE("div",style)

@@ -12,6 +12,9 @@ export default function button(b){
         }
         :hover{
             transform:translateX(10%);
+        }
+        :responsive{
+            font-size:21px;
         }`
 
     const button = cE("div",style)

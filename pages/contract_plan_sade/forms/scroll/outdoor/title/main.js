@@ -6,6 +6,9 @@ export default function title(){
             font-weight:900;
             padding:5px 10px;
             background:var(--colorBlue);
+        }
+        :responsive{
+            font-size:21px;
         }`
 
     const title = cE("div",style)

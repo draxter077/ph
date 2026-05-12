@@ -8,6 +8,9 @@ export default function question(q){
             flex-direction:column;
             width:40%;
             margin:5px 0px;
+        }
+        :responsive{
+            width:100%;
         }`
 
     const question = cE("div",style)

@@ -8,6 +8,10 @@ export default function img(){
             background:var(--colorWhite);
             padding:5px;
             transform:rotate(270deg);
+        }
+        :responsive{
+            height:25px;
+            width:25px;
         }`
 
     const img = cE("img",style)

@@ -8,6 +8,9 @@ export default function text(){
         }
         ::placeholder{
             font-style:italic;
+        }
+        :responsive{
+            font-size:14px;
         }`
     
     const text = cE("textarea",style)

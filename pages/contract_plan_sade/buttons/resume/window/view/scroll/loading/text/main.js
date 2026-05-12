@@ -6,6 +6,9 @@ export default function text(){
             text-align:center;
             width:fit-content;
             margin:10px 0px 0px 0px;
+        }
+        :responsive{
+            font-size:21px;
         }`
 
     const text = cE("div",style)

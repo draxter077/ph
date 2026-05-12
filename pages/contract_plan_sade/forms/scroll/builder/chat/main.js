@@ -12,6 +12,9 @@ export default function chat(){
 
             opacity:1;
             transition:all 0.5s;
+        }
+        :responsive{
+            width:100%;
         }`
 
     const chat = cE("div",style)

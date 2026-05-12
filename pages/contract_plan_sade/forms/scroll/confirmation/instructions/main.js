@@ -7,6 +7,9 @@ export default function instructions(){
         }
         >span{
             border-bottom:1px solid var(--colorBlue);
+        }
+        :responsive{
+            font-size:16px;
         }`
 
     const instructions = cE("div",style)

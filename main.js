@@ -1,7 +1,8 @@
 import main from "./pages/main/main.js"
 import plan_sade from "./pages/plan_sade/main.js"
 import contract_plan_sade from "./pages/contract_plan_sade/main.js"
-import client from "./pages/client/main.js"
+
+//import client from "./pages/client/main.js"
 import admin from "./pages/admin/main.js"
 
 export function randomName(names){
@@ -190,10 +191,11 @@ window.construct = function construct(d){
     const root = document.getElementById("root")
     root.innerHTML = ""
     if(d == undefined){
-        if(window.location.href.split("br/")[1] != undefined && window.location.href.split("br/")[1] != ""){
+        if(window.location.href.split("br/")[1]){
             let path = window.location.href.split("br/")[1]
             if(path == "plano_completo"){root.appendChild(plan_sade())}
             else if(path == "plano_completo/pedido"){root.appendChild(contract_plan_sade())}
+            //else if(path == "cliente"){root.appendChild(client())}
             else{root.appendChild(main())}
         }
         else{root.appendChild(main())}

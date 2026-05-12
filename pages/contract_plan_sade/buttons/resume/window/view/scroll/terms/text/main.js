@@ -14,6 +14,9 @@ export default function text(){
         }
         >a:hover{
             border-bottom:1px solid var(--colorBlue);
+        }
+        :responsive{
+            font-size:21px;
         }`
 
     const text = cE("div",style)

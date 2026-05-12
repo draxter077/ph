@@ -13,6 +13,10 @@ export default function text(e,w){
             color:var(--colorWhite);
             font-weight:900;
             border-radius:5px;
+        }
+        :responsive{
+            font-size:16px;
+            width:100%;
         }`
 
     const text = cE("div",style)

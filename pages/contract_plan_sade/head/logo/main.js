@@ -5,7 +5,7 @@ export default function logo(){
             border:2px solid var(--colorWhite);
         }
         :responsive{
-            height:75px;
+            height:65px;
             margin:2.5% 0px;
         }`
 

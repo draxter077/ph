@@ -8,6 +8,9 @@ export default function bar(){
             border-radius:5px;
             background:var(--colorWhite);
             overflow:hidden;
+        }
+        :responsive{
+            height:5px;    
         }`
 
     const bar = cE("div",style)

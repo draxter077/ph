@@ -8,6 +8,9 @@ export default function builder(){
             flex-direction:row;
             width:100%;
             height:100%;
+        }
+        :responsive{
+            flex-direction:column;
         }`
 
     const builder = cE("div",style)

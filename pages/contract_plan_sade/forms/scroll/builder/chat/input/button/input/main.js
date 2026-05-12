@@ -9,6 +9,9 @@ export default function input(t){
             border-radius:5px;
             color:var(--colorWhite);
             margin:5px 0px;
+        }
+        :responsive{
+            font-size:12px;
         }`
 
     const input = cE("div",style)
