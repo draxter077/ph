@@ -5,6 +5,11 @@ export default function copyright(){
             font-weight:900;
             text-align:center;
             color:var(--colorWhite);
+        }
+        :responsive{
+            order:2;
+            margin:20px 0px 0px 0px;
+            font-size:13px;
         }`
 
     const copyright = cE("div",style)

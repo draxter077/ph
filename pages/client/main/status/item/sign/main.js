@@ -10,6 +10,10 @@ export default function sign(){
         @keyframes blink{
             0%[background:var(--colorDarkerBlue);]
             100%[background:rgb(0,255,0);]
+        }
+        :responsive{
+            height:16px;
+            width:16px;
         }`
 
     const sign = cE("div",style)

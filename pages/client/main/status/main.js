@@ -8,6 +8,9 @@ export default function status(){
             justify-content:space-around;
             align-items:center;
             width:80%;
+        }
+        :responsive{
+            flex-direction:column;
         }`
 
     const status = cE("div",style)

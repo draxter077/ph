@@ -7,7 +7,7 @@ export default function text(){
             font-weight:900;
         }
         :responsive{
-            font-size:16px;
+            font-size:14px;
         }`
 
     const text = cE("div",style)

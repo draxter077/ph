@@ -198,7 +198,7 @@ window.construct = function construct(d){
             else if(path == "cliente"){root.appendChild(client())}
             else{root.appendChild(main())}
         }
-        else{root.appendChild(main())}
+        else{root.appendChild(client({user:{id:"teste"}}))}//main())}
     }
     else{
         if(d.page == "client"){root.appendChild(client(d.data))}

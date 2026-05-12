@@ -3,9 +3,6 @@ import brand from "./brand/main.js"
 export default function foot(){
     let style = `
         {
-            display:flex;
-            flex-direction:column;
-            align-items:center;
             width:100%;
             height:fit-content;
             padding:0px 0px 1%;

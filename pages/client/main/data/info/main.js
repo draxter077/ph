@@ -12,6 +12,7 @@ export default function info(t,v){
             border-radius:5px;
             padding:10px 15px;
             margin:5px;
+            white-space:nowrap;
         }`
 
     const info = cE("div",style)

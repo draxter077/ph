@@ -11,6 +11,10 @@ export default function item(t,d){
             box-shadow:0px 0px 3px 0px var(--colorBlue);
             border-radius:5px;
             padding:10px 15px;
+        }
+        :responsive{
+            margin:5px 0px;
+            width:100%;
         }`
 
     const item = cE("div",style)

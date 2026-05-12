@@ -4,11 +4,14 @@ export default function search(){
             width:100%;
             font-size:18px;
             padding:2px 5px;
-            border-bottom:1px solid var(--colorWhite);
+            border-bottom:1px solid var(--colorBlue);
             color:var(--colorWhite);
         }
         ::placeholder{
             font-style:italic;
+        }
+        :responsive{
+            font-size:16px;
         }`
 
     const search = cE("input",style)

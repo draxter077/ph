@@ -13,6 +13,9 @@ export default function main(d){
             align-items:center;
             width:100%;
             height:100svh;
+        }
+        :responsive{
+            height:fit-content;
         }`
 
     const main = cE("div",style)

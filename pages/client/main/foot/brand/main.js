@@ -10,6 +10,9 @@ export default function brand(){
             align-items:center;
             justify-content:space-around;
             width:100%;
+        }
+        :responsive{
+            flex-wrap:wrap;
         }`
 
     const brand = cE("div",style)

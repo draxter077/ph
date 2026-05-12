@@ -3,6 +3,10 @@ export default function value(v){
         {
             font-size:18px;
             color:var(--colorWhite);
+            width:fit-content;
+        }
+        :responsive{
+            font-size:14px;
         }`
 
     const value = cE("div",style)

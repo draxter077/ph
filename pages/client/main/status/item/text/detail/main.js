@@ -3,6 +3,9 @@ export default function detail(d){
         {
             font-size:16px;
             color:var(--colorWhite);
+        }
+        :responsive{
+            font-size:12px;
         }`
 
     const detail = cE("div",style)

@@ -9,6 +9,12 @@ export default function databases(d){
             justify-content:space-between;
             width:90%;
             height:50%;
+        }
+        :responsive{
+            flex-direction:column;
+            height:50svh;
+            width:95%;
+            margin:5% 0px 0px 0px;
         }`
 
     const databases = cE("div",style)

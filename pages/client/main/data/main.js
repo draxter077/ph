@@ -5,10 +5,15 @@ export default function data(d){
         {
             display:flex;
             flex-direction:row;
-            justify-content:space-between;
+            justify-content:center;
             align-items:center;
-            flex-wrap:nowrap
             width:90%;
+            overflow:scroll;
+        }
+        :responsive{
+            width:95%;
+            margin:5% 0px 0px 0px;
+            justify-content:flex-start;
         }`
 
     const data = cE("div",style)
