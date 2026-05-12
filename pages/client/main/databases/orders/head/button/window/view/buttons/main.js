@@ -12,7 +12,6 @@ export default function buttons(){
             font-size:16px;
         }
         :responsive{
-            font-size:14px;
             justify-content:space-around;
         }`
 

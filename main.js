@@ -187,7 +187,7 @@ window.cE = function cE(t, stl){
     return(el)
 }
 
-window.construct = function construct(d){
+window.construct = async function construct(d){
     const root = document.getElementById("root")
     root.innerHTML = ""
     if(d == undefined){
@@ -198,11 +198,17 @@ window.construct = function construct(d){
             else if(path == "cliente"){root.appendChild(client())}
             else{root.appendChild(main())}
         }
-        else{root.appendChild(client({user:{id:"teste"}}))}//main())}
+        else{root.appendChild(main())}
     }
     else{
-        if(d.page == "client"){root.appendChild(client(d.data))}
+        document.getElementById("root").style.opacity = 0
+        await new Promise(r => setTimeout(r,600))
+        if(d.page == "client"){
+            root.appendChild(client(d.data))
+        }
         //if(d.page == "admin"){root.appendChild(admin(d.data))}
+        await new Promise(r => setTimeout(r,100))
+        root.style.opacity = 1
     }
 }
 

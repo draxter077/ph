@@ -1,16 +1,30 @@
 export default function submit(){
     let style = `
         {
+            display:flex;
+            flex-direction:column;
+            align-items:center;
+            justify-content:center;
+            height:40px;
+            width:50%;
+            font-size:16px;
             font-weight:900;
+            text-align:center;
             background:var(--colorBlue) !important;
-            padding:10px 15px;
             color:var(--colorWhite);
             border-radius:5px;
             cursor:pointer;
-            transition:all 0.5s;
         }
-        :hover{
-            transform:scale(1.05);
+        :responsive{
+            height:30px;
+            font-size:14px;
+        }
+        >div{
+            width:40px;
+            height:50%;
+            border-radius:10px;
+            background:var(--colorWhite);
+            animation:loading2 2s linear 0s infinite alternate;
         }`
 
     const submit = cE("div",style)
@@ -18,9 +32,11 @@ export default function submit(){
 
     submit.addEventListener(
         "click",
-        function a(e){
+        async function a(e){
             submit.removeEventListener("click",a)
-            alert(e.target.parentElement.parentElement.children[1].value)
+            submit.innerHTML = `<div></div>`
+            await new Promise(r => setTimeout(r,2000))
+            //alert(e.target.parentElement.parentElement.children[1].value)
             e.target.parentElement.children[0].click()
         }
     )

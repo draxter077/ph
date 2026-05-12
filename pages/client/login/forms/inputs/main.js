@@ -9,6 +9,7 @@ export default function inputs(){
         }`
 
     const inputs = cE("div",style)
+    inputs.id = "formsInputs"
     inputs.appendChild(input("Domínio"))
     inputs.appendChild(input("Senha"))
     return(inputs)

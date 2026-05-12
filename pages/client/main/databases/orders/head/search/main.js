@@ -16,5 +16,22 @@ export default function search(){
 
     const search = cE("input",style)
     search.placeholder = "Pesquise em pedidos"
+
+    search.addEventListener(
+        "input",
+        function a(e){
+            const v = search.value
+            const cs = e.target.parentElement.parentElement.children[1].children
+            for(let i = 0; i < cs.length; i++){
+                if(!cs[i].innerHTML.includes(v)){
+                    cs[i].style.display = "none"
+                }
+                else{
+                    cs[i].style.display = "flex"
+                }
+
+            }
+        }
+    )
     return(search)
 }

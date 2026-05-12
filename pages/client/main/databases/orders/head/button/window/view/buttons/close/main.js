@@ -1,6 +1,7 @@
 export default function close(){
     let style = `
         {
+            font-size:16px;
             font-weight:900;
             color:var(--colorBlack);
             border-bottom:1px solid var(--colorWhite);
@@ -10,6 +11,9 @@ export default function close(){
         }
         :hover{
             border-bottom:1px solid var(--colorBlack);
+        }
+        :responsive{
+            font-size:14px;
         }`
 
     const close = cE("div",style)

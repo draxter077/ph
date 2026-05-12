@@ -11,11 +11,6 @@ export default function order(){
             color:var(--colorWhite);
             padding:2px 5px;
             border-bottom:1px solid var(--colorWhite);
-            cursor:pointer;
-            transition:background 0.5s;
-        }
-        :hover{
-            background:var(--colorBlue);
         }
         :responsive{
             width:150%;
@@ -24,7 +19,7 @@ export default function order(){
 
     const order = cE("div",style)
     order.appendChild(row("20%","00/00/0000"))
-    order.appendChild(row("50%","Pedido de adição"))
-    order.appendChild(row("30%","Completo"))
+    order.appendChild(row("60%","Remover sei lá o que sei lá o que"))
+    order.appendChild(row("20%","Em curso"))
     return(order)
 }

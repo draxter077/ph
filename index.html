@@ -19,6 +19,9 @@
         </script>
 
         <style>
+            #root{
+                transition:all 0.5s;
+            }
             #loading{
                 position:fixed;
                 top:0%;
@@ -45,6 +48,11 @@
                 0%{transform:translateX(-100%);width:5%}
                 50%{transform:translateX(0%);width:2.5%}
                 100%{transform:translateX(100%);width:5%}
+            }
+            @keyframes loading2{
+                0%{transform:translateX(-100%);}
+                50%{transform:translateX(0%);}
+                100%{transform:translateX(100%);}
             }
         </style>
     </head>
