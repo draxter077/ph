@@ -10,6 +10,6 @@ export default function title(){
         }`
 
     const title = cE("div",style)
-    title.innerHTML = `O Plano Completo: nós cuidamos de tudo para você focar onde precisa`
+    title.innerHTML = `O Plano Completo: nós cuidamos de tudo para você focar no que faz de melhor`
     return(title)
 }

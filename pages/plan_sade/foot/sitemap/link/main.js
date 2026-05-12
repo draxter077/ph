@@ -15,6 +15,5 @@ export default function link(href, t){
     const link = cE("a",style)
     link.innerHTML = t
     link.href = href
-    link.target = "_blank"
     return(link)
 }

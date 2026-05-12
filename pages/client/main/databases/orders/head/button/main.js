@@ -1,3 +1,5 @@
+import window from './window/main.js'
+
 export default function button(){
     let style = `
         {
@@ -21,5 +23,17 @@ export default function button(){
 
     const button = cE("div",style)
     button.innerHTML = "Novo"
+
+    button.addEventListener(
+        "click",
+        async function a(){
+            button.removeEventListener("click",a)
+            let w = window()
+            document.getElementById("root").appendChild(w)
+            await new Promise(r => setTimeout(r,100))
+            w.style.opacity = 1
+            button.addEventListener("click",a)
+        }
+    )
     return(button)
 }
