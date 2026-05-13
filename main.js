@@ -189,8 +189,8 @@ window.cE = function cE(t, stl){
 
 window.construct = async function construct(d){
     const root = document.getElementById("root")
-    root.innerHTML = ""
     if(d == undefined){
+        root.innerHTML = ""
         if(window.location.href.split("br/")[1]){
             let path = window.location.href.split("br/")[1]
             if(path == "plano_completo"){root.appendChild(plan_sade())}
@@ -203,6 +203,7 @@ window.construct = async function construct(d){
     else{
         root.style.opacity = 0
         await new Promise(r => setTimeout(r,600))
+        root.innerHTML = ""
         if(d.page == "client"){
             root.appendChild(client(d.data))
         }
