@@ -1,7 +1,7 @@
 export default function text(){
     let style = `
         {
-            font-size:24px;
+            font-size:21px;
             color:var(--colorBlack);
             text-align:center;
             width:fit-content;
@@ -14,9 +14,6 @@ export default function text(){
         }
         >a:hover{
             border-bottom:1px solid var(--colorBlue);
-        }
-        :responsive{
-            font-size:21px;
         }`
 
     const text = cE("div",style)

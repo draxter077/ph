@@ -2,7 +2,7 @@ export default function link(n,id){
     let style = `
         {
             position:relative;
-            font-size:21px;
+            font-size:18px;
             font-weight:900;
             padding:2px 7px 2px;
             margin:0px 0px 0px 10px;
@@ -11,7 +11,6 @@ export default function link(n,id){
         }
         :responsive{
             margin:0px 5px;
-            font-size:18px;
             padding:1px 7px 1px;
         }
         ::after{

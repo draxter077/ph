@@ -1,16 +1,13 @@
 export default function text(){
     let style = `
         {
-            font-size:16px;
+            font-size:14px;
             padding:5px 10px;
             width:100%;
             resize:none;
         }
         ::placeholder{
             font-style:italic;
-        }
-        :responsive{
-            font-size:14px;
         }`
     
     const text = cE("textarea",style)

@@ -2,16 +2,13 @@ export default function input(t,p){
     let style = `
         {
             background:var(--colorWhite);
-            font-size:16px;
+            font-size:14px;
             padding:5px 10px;
             border-radius:5px;
             resize:none;
         }
         ::placeholder{
             font-style:italic;
-        }
-        :responsive{
-            font-size:14px;
         }
         @keyframes inputError{
             0%[background:var(--colorWhite);]

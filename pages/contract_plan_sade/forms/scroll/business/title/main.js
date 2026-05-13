@@ -1,11 +1,8 @@
 export default function title(){
     let style = `
         {
-            font-size:32px;
-            color:var(--colorWhite);
-        }
-        :responsive{
             font-size:21px;
+            color:var(--colorWhite);
         }`
 
     const title = cE("div",style)

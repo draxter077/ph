@@ -1,7 +1,7 @@
 export default function title(){
     let style = `
         {
-            font-size:30px;
+            font-size:24px;
             color:var(--colorWhite);
             text-align:right;
             width:100%;
@@ -10,7 +10,6 @@ export default function title(){
             color:var(--colorBlue);
         }
         :responsive{
-            font-size:24px;
             text-align:center;
         }`
 

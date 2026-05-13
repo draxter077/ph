@@ -1,11 +1,8 @@
 export default function img(){
     let style = `
         {
-            height:40px;
-            margin:0px 20px 0px 0px;
-        }
-        :responsive{
             height:28px;
+            margin:0px 20px 0px 0px;
         }`
 
     const img = cE("img",style)

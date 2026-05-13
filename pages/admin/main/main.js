@@ -1,27 +1,28 @@
 import head from "./head/main.js"
-import add from "./add/main.js"
-import finance from "./finance/main.js"
-import payments from "./payments/main.js"
-import clients from "./clients/main.js"
-import contact from "../../common/contact/main.js"
-import foot from "../../common/foot/main.js"
+import status from "./status/main.js"
+import data from "./data/main.js"
+import databases from "./databases/main.js"
+import foot from "./foot/main.js"
 
-export default function main(data){
+export default function main(d){
     let style = `
         {
             display:flex;
             flex-direction:column;
+            justify-content:space-between;
             align-items:center;
             width:100%;
+            height:100svh;
+        }
+        :responsive{
+            height:fit-content;
         }`
 
-    const main = cE("div", style)
+    const main = cE("div",style)
     main.appendChild(head())
-    main.appendChild(add())
-    main.appendChild(finance(data.payments))
-    main.appendChild(payments(data.payments))
-    main.appendChild(clients(data.clients))
-    main.appendChild(contact())
+    main.appendChild(status())
+    main.appendChild(data())
+    main.appendChild(databases())
     main.appendChild(foot())
     return(main)
 }

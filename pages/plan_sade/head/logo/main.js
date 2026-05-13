@@ -1,7 +1,7 @@
 export default function logo(){
     let style = `
         {
-            height:60px;
+            height:55px;
             border:2px solid var(--colorWhite);
         }
         :responsive{

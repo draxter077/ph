@@ -1,6 +1,6 @@
 import logo from "./logo/main.js"
 import forms from "./forms/main.js"
-import submit from "./submit/main.js"
+import foot from "./foot/main.js"
 
 export default function login(){
     let style = `
@@ -13,9 +13,9 @@ export default function login(){
             height:100svh;
         }`
 
-    const login = cE("div", style)
+    const login = cE("div",style)
     login.appendChild(logo())
     login.appendChild(forms())
-    login.appendChild(submit())
+    login.appendChild(foot())
     return(login)
 }

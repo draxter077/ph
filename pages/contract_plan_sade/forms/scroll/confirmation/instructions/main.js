@@ -1,15 +1,12 @@
 export default function instructions(){
     let style = `
         {
-            font-size:21px;
+            font-size:16px;
             text-align:justify;
             margin:2.5% 0px 0px 0px;
         }
         >span{
             border-bottom:1px solid var(--colorBlue);
-        }
-        :responsive{
-            font-size:16px;
         }`
 
     const instructions = cE("div",style)

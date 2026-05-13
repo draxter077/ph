@@ -1,7 +1,7 @@
 export default function logo(){
     let style = `
         {
-            height:150px;
+            height:100px;
             border:3px solid var(--colorWhite);
             box-shadow:0px 0px 3px 0px var(--colorWhite);
         }

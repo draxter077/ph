@@ -1,7 +1,7 @@
 export default function icon(){
     let style = `
         {
-            height:20px;
+            height:18px;
             transition:all 0.5s;
             filter:invert(1);
         }`

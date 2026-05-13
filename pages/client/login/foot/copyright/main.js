@@ -1,14 +1,11 @@
 export default function copyright(){
     let style = `
         {
-            font-size:15px;
+            font-size:12px;
             font-weight:900;
             text-align:center;
             color:var(--colorWhite);
             margin:20px 0px 0px 0px;
-        }
-        :responsive{
-            font-size:12px;
         }`
 
     const copyright = cE("div",style)

@@ -9,7 +9,7 @@ export default function price(p){
             padding:5px 0px 0px 0px;
         }
         >span{
-            font-size:26px;
+            font-size:24px;
             margin:0px 0px 0px 5px;
         }`
 

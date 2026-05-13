@@ -1,11 +1,10 @@
 export default function title(){
     let style = `
         {
-            font-size:30px;
+            font-size:26px;
             color:var(--colorBlue);
         }
         :responsive{
-            font-size:26px;
             text-align:center;
         }`
 

@@ -3,12 +3,9 @@ export default function slogan(){
         {
             position:relative;
             width:fit-content;
-            font-size:40px;
+            font-size:28px;
             color:var(--colorWhite);
             padding:0px 40px 20px;
-        }
-        :responsive{
-            font-size:28px;
         }
         ::after{
             position:absolute;

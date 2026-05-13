@@ -1,12 +1,11 @@
 export default function logo(){
     let style = `
         {
-            height:100px;
+            height:75px;
             border:2px solid var(--colorWhite);
             box-shadow:0px 0px 3px 0px var(--colorWhite);
         }
         :responsive{
-            height:75px;
             margin:2.5% 0px;
         }`
 

@@ -4,13 +4,10 @@ export default function bar(){
     let style = `
         {
             width:90%;
-            height:10px;
+            height:5px;
             border-radius:5px;
             background:var(--colorWhite);
             overflow:hidden;
-        }
-        :responsive{
-            height:5px;    
         }`
 
     const bar = cE("div",style)

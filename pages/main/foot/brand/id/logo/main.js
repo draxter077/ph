@@ -1,11 +1,8 @@
 export default function logo(){
     let style = `
         {
-            height:60px;
-            border:2px solid var(--colorWhite);
-        }
-        :responsive{
             height:52px;
+            border:2px solid var(--colorWhite);
         }`
 
     const logo = cE("img",style)

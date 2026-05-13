@@ -7,8 +7,8 @@ export default function services(){
             display:flex;
             flex-direction:row;
             align-items:flex-start;
-            height:40px;
-            font-size:32px;
+            height:25px;
+            font-size:18px;
             margin:40px 0px 0px 0px;
             padding:0px 15px;
             border-left:1px solid var(--colorBlue);
@@ -16,8 +16,6 @@ export default function services(){
         }
         :responsive{
             margin:30px 0px 0px 0px;
-            font-size:18px;
-            height:25px;
         }`
 
     const services = cE("div",style)

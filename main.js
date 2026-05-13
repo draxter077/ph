@@ -196,6 +196,7 @@ window.construct = async function construct(d){
             if(path == "plano_completo"){root.appendChild(plan_sade())}
             else if(path == "plano_completo/pedido"){root.appendChild(contract_plan_sade())}
             else if(path == "cliente"){root.appendChild(client())}
+            else if(path == "admin"){root.appendChild(admin())}
             else{root.appendChild(main())}
         }
         else{root.appendChild(main())}
@@ -207,7 +208,9 @@ window.construct = async function construct(d){
         if(d.page == "client"){
             root.appendChild(client(d.data))
         }
-        //if(d.page == "admin"){root.appendChild(admin(d.data))}
+        else if(d.page == "admin"){
+            root.appendChild(admin(d.data))
+        }
         await new Promise(r => setTimeout(r,100))
         root.style.opacity = 1
     }

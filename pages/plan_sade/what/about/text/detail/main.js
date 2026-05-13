@@ -1,13 +1,10 @@
 export default function detail(){
     let style = `
         {
-            font-size:18px;
+            font-size:16px;
             margin:10px 0px 0px 0px;
             text-align:justify;
             color:var(--colorWhite);
-        }
-        :responsive{
-            font-size:16px;
         }`
 
     const detail = cE("div",style)

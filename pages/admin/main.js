@@ -1,5 +1,5 @@
-import login from "./login/main.js"
 import main from "./main/main.js"
+import login from "./login/main.js"
 
 export default function admin(data){
     let style = `
@@ -8,11 +8,12 @@ export default function admin(data){
         }`
 
     const admin = cE("div", style)
-    if(data == undefined){
-        admin.appendChild(login())
+    document.title = "Admin Ph"
+    if(data){
+        admin.appendChild(main(data))
     }
     else{
-        admin.appendChild(main(data))
+        admin.appendChild(login())
     }
 
     return(admin)

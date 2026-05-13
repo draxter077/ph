@@ -1,4 +1,5 @@
-import input from "./input/main.js"
+import inputs from "./inputs/main.js"
+import buttons from "./buttons/main.js"
 
 export default function forms(){
     let style = `
@@ -6,15 +7,16 @@ export default function forms(){
             display:flex;
             flex-direction:column;
             align-items:center;
-            width:30%;
-            padding:5vh;
+            width:25%;
+            margin:2.5% 0px 0px 0px;
         }
         :responsive{
-            width:100%;
+            margin:10% 0px 0px 0px;
+            width:95%;
         }`
-    
-    const forms = cE("div", style)
-    forms.appendChild(input("Usuário"))
-    forms.appendChild(input("Senha"))
+
+    const forms = cE("div",style)
+    forms.appendChild(inputs())
+    forms.appendChild(buttons())
     return(forms)
 }

@@ -9,7 +9,7 @@ export default function price(p){
             border-right:1px solid var(--colorBlack);
         }
         >span{
-            font-size:26px;
+            font-size:24px;
             margin:0px 0px 0px 5px;
         }`
 
