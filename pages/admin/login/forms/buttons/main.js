@@ -1,5 +1,4 @@
 import submit from "./submit/main.js"
-import forgot from "./forgot/main.js"
 
 export default function buttons(){
     let style = `
@@ -13,6 +12,5 @@ export default function buttons(){
 
     const buttons = cE("div",style)
     buttons.appendChild(submit())
-    buttons.appendChild(forgot())
     return(buttons)
 }

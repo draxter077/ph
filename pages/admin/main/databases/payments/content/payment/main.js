@@ -11,15 +11,15 @@ export default function payment(){
             color:var(--colorWhite);
             padding:2px 5px;
             border-bottom:1px solid var(--colorWhite);
-        }
-        :responsive{
-            width:150%;
+            width:fit-content;
+            min-width:100%;
         }`
 
     const payment = cE("div",style)
-    payment.appendChild(row("20%","00/00/0000"))
-    payment.appendChild(row("40%","Plano Completo - Mês"))
-    payment.appendChild(row("15%","R$ 259,99"))
-    payment.appendChild(row("15%","Em aberto"))
+    payment.appendChild(row("80px","p123456"))
+    payment.appendChild(row("120px","00/00/0000"))
+    payment.appendChild(row("300px","Plano Completo - Mês"))
+    payment.appendChild(row("120px","R$ 259,99"))
+    payment.appendChild(row("120px","Em aberto"))
     return(payment)
 }

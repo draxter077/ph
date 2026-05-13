@@ -12,7 +12,7 @@ export default function search(){
         }`
 
     const search = cE("input",style)
-    search.placeholder = "Pesquise em pedidos"
+    search.placeholder = "Pesquise em pedidos [256]"
 
     search.addEventListener(
         "input",

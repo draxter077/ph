@@ -1,7 +1,7 @@
 import head from "./head/main.js"
 import content from "./content/main.js"
 
-export default function payments(){
+export default function clients(){
     let style = `
         {
             display:flex;
@@ -18,8 +18,8 @@ export default function payments(){
             width:100%;
         }`
 
-    const payments = cE("div",style)
-    payments.appendChild(head())
-    payments.appendChild(content())
-    return(payments)
+    const clients = cE("div",style)
+    clients.appendChild(head())
+    clients.appendChild(content())
+    return(clients)
 }

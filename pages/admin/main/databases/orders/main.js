@@ -6,17 +6,16 @@ export default function orders(){
         {
             display:flex;
             flex-direction:column;
-            width:100%;
+            width:33%;
             height:100%;
             background:var(--colorDarkerBlue);
             padding:10px 15px;
             box-shadow:0px 0px 3px 0px var(--colorBlue);
             border-radius:10px;
-            margin:0px 0px 0px 5px;
         }
         :responsive{
-            height:50%;
-            margin:20px 0px 0px 0px;
+            height:33%;
+            width:100%;
         }`
 
     const orders = cE("div",style)
