@@ -17,6 +17,7 @@ export default function payment(){
 
     const payment = cE("div",style)
     payment.appendChild(row("80px","p123456"))
+    payment.appendChild(row("80px","c123456"))
     payment.appendChild(row("120px","00/00/0000"))
     payment.appendChild(row("300px","Plano Completo - Mês"))
     payment.appendChild(row("120px","R$ 259,99"))
