@@ -201,7 +201,7 @@ window.construct = async function construct(d){
         else{root.appendChild(main())}
     }
     else{
-        document.getElementById("root").style.opacity = 0
+        root.style.opacity = 0
         await new Promise(r => setTimeout(r,600))
         if(d.page == "client"){
             root.appendChild(client(d.data))

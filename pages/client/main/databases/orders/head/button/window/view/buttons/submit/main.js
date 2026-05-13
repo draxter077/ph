@@ -36,7 +36,14 @@ export default function submit(){
             submit.removeEventListener("click",a)
             submit.innerHTML = `<div></div>`
             await new Promise(r => setTimeout(r,2000))
-            //alert(e.target.parentElement.parentElement.children[1].value)
+
+            // axios.post(`${api_url}/client/sendOrder`, {content:e.target.parentElement.parentElement.children[1].value})
+            //     .then(r => {
+            //         // document.getElementById("contentOrders")
+            //         e.target.parentElement.children[0].click()
+            //     })
+            //     .catch(r => {submit.innerHTML = "Tente mais tarde"})
+
             e.target.parentElement.children[0].click()
         }
     )

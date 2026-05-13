@@ -12,6 +12,7 @@ export default function content(){
         }`
 
     const content = cE("div",style)
+    content.id = "contentOrders"
     content.appendChild(order())
     content.appendChild(order())
     content.appendChild(order())

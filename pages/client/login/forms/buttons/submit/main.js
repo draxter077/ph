@@ -37,7 +37,25 @@ export default function submit(){
             submit.innerHTML = `<div></div>`
             await new Promise(r => setTimeout(r,2000))
             const is = document.getElementById("formsInputs").children
+
             if(is[0].value && is[1].value){
+                // axios.post(`${api_url}/client/login`, {domain:is[0].value,password:is[1].value})
+                //     .then(async r => {await construct({page:"client",data:r.data})})
+                //     .catch(async r => {
+                //         if(r.response.status == 403){
+                //             is[1].style = "box-shadow:0px 0px 3px 0px red"
+                //             await new Promise(r => setTimeout(r,600))
+                //             is[1].style = "box-shadow:0px 0px 3px 0px var(--colorBlue)"
+                //         }
+                //         else if(r.response.status == 404){
+                //             is[0].style = "box-shadow:0px 0px 3px 0px red"
+                //             await new Promise(r => setTimeout(r,600))
+                //             is[0].style = "box-shadow:0px 0px 3px 0px var(--colorBlue)"
+                //         }
+                //         else{
+                //             submit.innerHTML = "Tente mais tarde"
+                //         }
+                //     })
                 await construct({page:"client",data:{user:{id:"teste"}}})
             }
             else if(is[0].value){
@@ -50,7 +68,6 @@ export default function submit(){
                 await new Promise(r => setTimeout(r,600))
                 is[0].style = "box-shadow:0px 0px 3px 0px var(--colorBlue)"
             }
-            // Tente novamente mais tarde
             submit.innerHTML = "Entrar"
             submit.addEventListener("click",a)
         }

@@ -8,6 +8,7 @@ export default function client(data){
         }`
 
     const client = cE("div", style)
+    document.title = "Cliente Ph"
     if(data){
         axios.defaults.headers.common["userAuth"] = data.user.id
         client.appendChild(main(data))
