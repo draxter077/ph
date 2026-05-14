@@ -65,9 +65,12 @@ export default function resume(){
                 if(ws){
                     const ifr = document.getElementById("builderIframe")
                     const prompt = `Quero uma landing page moderna. O nome da empresa é ${inputs[1].children[1].value}, do setor ${inputs[3].children[1].value}. Nosso público alvo é ${inputs[4].children[1].value}, e, com o site, temos o objetivo de ${inputs[5].children[1].value}`
-                    //axios.post(`${api_url}/contract_plan_sade/builder`, {prompt:prompt,past_html:""})
-                    //    .then(r => {ifr.srcdoc = r.data.html;document.getElementById("builderChat").style = "opacity:1";})
-                    //    .catch(r => {ifr.srcdoc = `Error: ${r}`})
+                    axios.post(`${api_url}/contract_plan_sade/builder`, {prompt:prompt,past_html:""})
+                       .then(r => {
+                            ifr.srcdoc = r.data.html
+                            document.getElementById("builderChat").style = "opacity:1"
+                        })
+                       .catch(r => {ifr.srcdoc = `Error: ${r}`})
                     e.style.transform = "translateX(-50%)"
                     p.style.width = "66%"
                 }
