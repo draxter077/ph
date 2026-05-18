@@ -10,7 +10,7 @@ export default function button(){
             justify-content:center;
             background:var(--colorWhite);
             border-radius:50px;
-            margin:5% 0px 0px 0px;
+            margin:2.5% 0px 0px 0px;
             padding:15px 10%;
             transition:all 0.5s;
         }

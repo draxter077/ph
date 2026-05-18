@@ -32,6 +32,7 @@ export default function resume(){
                 let inputs = document.getElementById("inputs").children
                 const body = {
                     html:document.getElementById("builderIframe").srcdoc,
+                    observations:document.getElementById("builderChat").value,
                     email:inputs[0].children[1].value,
                     whatsapp:inputs[1].children[1].value,
                     name:inputs[2].children[1].value,
@@ -64,8 +65,7 @@ export default function resume(){
                 }
                 if(ws){
                     const ifr = document.getElementById("builderIframe")
-                    const prompt = `Quero uma landing page moderna. O nome da empresa é ${inputs[1].children[1].value}, do setor ${inputs[3].children[1].value}. Nosso público alvo é ${inputs[4].children[1].value}, e, com o site, temos o objetivo de ${inputs[5].children[1].value}`
-                    axios.post(`${api_url}/contract_plan_sade/builder`, {prompt:prompt,past_html:""})
+                    axios.post(`${api_url}/contract_plan_sade/builder`, {name:inputs[1].children[1].value,sector:inputs[3].children[1].value,goals:inputs[5].children[1].value})
                        .then(r => {
                             ifr.srcdoc = r.data.html
                             document.getElementById("builderChat").style = "opacity:1"
@@ -74,7 +74,6 @@ export default function resume(){
                     e.style.transform = "translateX(-50%)"
                     p.style.width = "66%"
                 }
-                await new Promise(r => setTimeout(r, 1000))
                 for(let i = 0; i < inputs.length; i++){
                     if(inputs[i].children[1].value.length == 0){
                         inputs[i].children[1].style = ""

@@ -26,13 +26,13 @@ export default function method(){
     method.id = "method"
     method.appendChild(title())
     method.appendChild(items([
-        {img:"/assets/icons/google.png",title:"Otimizado para SEO/Google",description:"Você estará onde seus clientes estão"},
-        {img:"/assets/icons/user.png",title:"Baseado nas últimas recomendações de UX",description:"Sua empresa não para no tempo. Seu site também não"},
-        {img:"/assets/icons/deal.png",title:"Focado em geração de leads",description:"Não basta ser um site bonito"},
+        {img:"/assets/icons/google.png",title:"Otimizado para Google (SEO)",description:"Onde seus clientes estão"},
+        {img:"/assets/icons/user.png",title:"Pensado para o usuário (UX)",description:"Fáceis para seus clientes"},
+        {img:"/assets/icons/deal.png",title:"Focado em geração de leads",description:"Não basta ser bonito"},
         {img:"/assets/icons/responsive.png",title:"Design responsivo",description:"Para todos os clientes"},
-        {img:"/assets/icons/code.png",title:"Leve e rápido",description:"Seu cliente não terá tempo de pensar na concorrência"},
-        {img:"/assets/icons/marketing.png",title:"Gerador de tráfego orgânico",description:"Sua marca naturalmente sendo vista por quem você quer"},
-        {img:"/assets/icons/global.png",title:"Exatamente como você precisava",description:"Você não precisa de mais uma dor de cabeça"}
+        {img:"/assets/icons/code.png",title:"Leve e rápido",description:"Do jeito que seu cliente gosta"},
+        {img:"/assets/icons/marketing.png",title:"Gerador de tráfego orgânico",description:"O holofote estará em você"},
+        {img:"/assets/icons/global.png",title:"Exatamente como você precisava",description:"Somos a sua solução completa"}
     ]))
 
     window.addEventListener(

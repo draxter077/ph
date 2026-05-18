@@ -9,23 +9,21 @@ export default function plan(){
             display:flex;
             flex-direction:column;
             align-items:center;
-            background:var(--colorBlue);
+            margin:7.5% 0px 0px 0px;
+            width:fit-content;
+            background:var(--colorDarkerBlue);
+            border-radius:10px;
+            padding:20px 25px;
             box-shadow:0px 0px 3px 0px var(--colorBlue);
-            padding:10px 15px;
-            width:100%;
-            transition:all 0.5s;
         }
         :responsive{
-            width:100%;
-            margin:10px 0px;
-        }
-        :hover{
-            box-shadow:0px 0px 10px 0px var(--colorBlue);
+            width:95%;
+            margin:10% 0px;
         }`
 
     const plan = cE("div",style)
-    plan.appendChild(title("Exatamente o que você precisa"))
-    plan.appendChild(description("Focado em pequenas e médias empresas"))
+    plan.appendChild(title("Plano Completo"))
+    plan.appendChild(description("A solução completa para tirar sua ideia do zero"))
     plan.appendChild(items([
                 {img:"/assets/icons/domain.png",text:"Domínio .br"},
                 {img:"/assets/icons/www.png",text:"Site profissional"},

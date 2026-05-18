@@ -7,6 +7,7 @@ export default function item(t,d){
             display:flex;
             flex-direction:column;
             align-items:flex-start;
+            width:30%;
             background:var(--colorDarkerBlue);
             padding:10px 15px;
             border-radius:5px;
@@ -14,6 +15,7 @@ export default function item(t,d){
         }
         :responsive{
             margin:5px 0px;
+            width:100%;
         }`
 
     const text = cE("div",style)

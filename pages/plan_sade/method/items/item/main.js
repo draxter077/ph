@@ -7,9 +7,11 @@ export default function item(i){
             display:flex;
             flex-direction:column;
             align-items:flex-start;
-            border-top:1px solid var(--colorBlue);
+            box-shadow:0px 0px 2px 0px var(--colorWhite);
+            border-radius:10px;
             padding:10px 15px;
-            width:75%;
+            margin:10px;
+            width:30%;
         }
         :responsive{
             width:100%;

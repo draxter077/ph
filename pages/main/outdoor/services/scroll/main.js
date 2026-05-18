@@ -12,13 +12,13 @@ export default function scroll(){
 
     const scroll = cE("div",style)
     
-    let svs = ["otimizados para Google",
-        "focados em UX",
-        "que geram leads",
-        "com design responsivo",
-        "leves e rápidos",
-        "para tráfego orgânico",
-        "como você precisava"
+    let svs = ["Sites otimizados para Google",
+        "Sites pensados para o usuário",
+        "Sites que geram leads",
+        "Sites com design responsivo",
+        "Sites leves e rápidos",
+        "Sites para tráfego orgânico",
+        "Sites como você precisa"
     ]
     for(let i = 0; i < svs.length; i++){
         scroll.appendChild(text(svs[i]))

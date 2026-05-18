@@ -1,9 +1,9 @@
 export default function description(d){
     let style = `
         {
-            font-size:16px;
+            font-size:22px;
             color:var(--colorWhite);
-            line-height:1.0;
+            text-align:center;
         }`
 
     const description = cE("div",style)

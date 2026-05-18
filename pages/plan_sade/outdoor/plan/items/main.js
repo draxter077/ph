@@ -7,7 +7,7 @@ export default function items(is){
             flex-direction:row;
             justify-content:center;
             flex-wrap:wrap;
-            background:var(--colorDarkerBlue);
+            box-shadow:0px 0px 2px 0px var(--colorWhite);
             border-radius:5px;
             margin:20px 0px 0px 0px;
             padding:0px 5px;

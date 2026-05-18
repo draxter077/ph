@@ -7,6 +7,7 @@ export default function status(){
             flex-direction:row;
             justify-content:space-around;
             align-items:center;
+            flex-wrap:wrap;
             width:80%;
         }`
 

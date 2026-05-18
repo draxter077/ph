@@ -13,6 +13,7 @@ export default function button(){
             margin:5% 0px 0px 0px;
             padding:15px 10%;
             transition:all 0.5s;
+            overflow:hidden;
         }
         :hover{
             transform:translateX(5%);

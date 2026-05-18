@@ -7,6 +7,7 @@ export default function item(t,d){
             display:flex;
             flex-direction:row;
             align-items:center;
+            width:30%;
             background:var(--colorDarkerBlue);
             box-shadow:0px 0px 3px 0px var(--colorBlue);
             border-radius:5px;

@@ -1,26 +1,12 @@
 export default function slogan(){
     let style = `
         {
-            position:relative;
             width:fit-content;
             font-size:28px;
+            font-weight:900;
             color:var(--colorWhite);
-            padding:0px 40px 20px;
-        }
-        ::after{
-            position:absolute;
-            bottom:0%;
-            left:0%;
-            content:"";
-            width:0%;
-            height:2px;
             background:var(--colorBlue);
-            animation:movingDot 2s ease-in-out 0s infinite alternate;
-        }
-        @keyframes movingDot{
-            0%[left:0%;width:0%;]
-            40%[left:40%;width:20%;]
-            100%[left:100%;width:0%;]
+            padding:15px 20px;
         }`
 
     const slogan = cE("div",style)

@@ -3,7 +3,7 @@ export default function description(d){
         {
             font-size:14px;
             color:var(--colorBlue);
-            padding:0px 0px 0px 5%;
+            padding:1% 0px 0px 38px;
         }
         :responsive{
             padding:0px 0px 0px 10%;

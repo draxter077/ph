@@ -6,7 +6,7 @@ export default function questions(){
             display:flex;
             flex-direction:row;
             align-items:flex-start;
-            justify-content:space-between;
+            justify-content:space-around;
             flex-wrap:wrap;
             width:100%;
             margin:2.5% 0px 0px 0px;

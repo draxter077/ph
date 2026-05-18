@@ -1,11 +1,11 @@
 export default function text(){
     let style = `
         {
-            margin:0px 10px 0px 0px;
-            color:var(--colorWhite);
+            font-size:20px;
+            color:var(--colorBlack);
         }`
-    
+
     const text = cE("div",style)
-    text.innerHTML = "Sites"
+    text.innerHTML = "Transforme sua ideia"
     return(text)
 }
