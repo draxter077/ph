@@ -1,7 +1,7 @@
 import head from "./head/main.js"
 import content from "./content/main.js"
 
-export default function orders(){
+export default function orders(os){
     let style = `
         {
             display:flex;
@@ -21,6 +21,6 @@ export default function orders(){
 
     const orders = cE("div",style)
     orders.appendChild(head())
-    orders.appendChild(content())
+    orders.appendChild(content(os))
     return(orders)
 }

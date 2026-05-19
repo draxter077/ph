@@ -25,12 +25,9 @@ export default function button(b){
             let e = document.getElementById("windowView").children[0]
             e.style.transform = "translateX(-33%)"
 
-            //axios.post(`${api_url}/contract_plan_sade/sendOrder`, b)
-            //    .then(r => {e.style.transform = "translateX(-66%)"})
-            //    .catch(r => {console.log(`Error: ${r}`)})
-
-            await new Promise(r => setTimeout(r,5000))
-            e.style.transform = "translateX(-66%)"
+            await axios.post(`${api_url}/contract_plan_sade/sendOrder`, b)
+               .then(r => {e.style.transform = "translateX(-66%)"})
+               .catch(r => {console.log(`Error: ${r}`)})
         }
     )
     return(button)

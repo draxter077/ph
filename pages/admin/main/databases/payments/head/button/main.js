@@ -31,17 +31,14 @@ export default function button() {
         async function a(){
             button.removeEventListener("click", a)
             button.innerHTML = `<div></div>`
-            await new Promise(r => setTimeout(r,2000))
 
-            // axios.get(`${api_url}/admin/addPayments`)
-            // .then(async r => {
-            //     button.innerHTML = `Enviado`
-            // })
-            // .catch(async r => {
-            //     button.innerHTML = "Tente mais tarde"
-            // })
-
-            button.innerHTML = "Enviado"
+            axios.get(`${api_url}/admin/addPayments`)
+            .then(async r => {
+                button.innerHTML = `Enviado`
+            })
+            .catch(async r => {
+                button.innerHTML = "Tente mais tarde"
+            })
         }
     )
     return (button)

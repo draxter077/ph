@@ -1,7 +1,7 @@
 import payments from "./payments/main.js"
 import orders from "./orders/main.js"
 
-export default function databases(d){
+export default function databases(os,ps){
     let style = `
         {
             display:flex;
@@ -18,7 +18,7 @@ export default function databases(d){
         }`
 
     const databases = cE("div",style)
-    databases.appendChild(payments())
-    databases.appendChild(orders())
+    databases.appendChild(payments(ps))
+    databases.appendChild(orders(os))
     return(databases)
 }

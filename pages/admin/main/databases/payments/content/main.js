@@ -1,6 +1,6 @@
 import payment from "./payment/main.js"
 
-export default function content(){
+export default function content(ps){
     let style = `
         {
             display:flex;
@@ -15,25 +15,8 @@ export default function content(){
         }`
 
     const content = cE("div",style)
-    content.appendChild(payment())
-    content.appendChild(payment())
-    content.appendChild(payment())
-    content.appendChild(payment())
-    content.appendChild(payment())
-    content.appendChild(payment())
-    content.appendChild(payment())
-    content.appendChild(payment())
-    content.appendChild(payment())
-    content.appendChild(payment())
-    content.appendChild(payment())
-    content.appendChild(payment())
-    content.appendChild(payment())
-    content.appendChild(payment())
-    content.appendChild(payment())
-    content.appendChild(payment())
-    content.appendChild(payment())
-    content.appendChild(payment())
-    content.appendChild(payment())
-    content.appendChild(payment())
+    for(let i = 0; i < ps.length; i++){
+        content.appendChild(payment(ps[i]))
+    }
     return(content)
 }

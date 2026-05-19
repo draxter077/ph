@@ -1,6 +1,6 @@
 import info from "./info/main.js"
 
-export default function data(d){
+export default function data(u){
     let style = `
         {
             display:flex;
@@ -17,9 +17,9 @@ export default function data(d){
         }`
 
     const data = cE("div",style)
-    data.appendChild(info("Nome","Teste Teste LTDA"))
-    data.appendChild(info("CNPJ","12.345.678/0001-12"))
-    data.appendChild(info("E-mail","teste@gmail.com | contato@domain.com.br"))
-    data.appendChild(info("WhatsApp","(00) 90000-0000"))
+    data.appendChild(info("Nome",u.name))
+    data.appendChild(info("CNPJ",u.cnpj))
+    data.appendChild(info("E-mail",`${u.email} | contato@${u.domain}`))
+    data.appendChild(info("WhatsApp",u.whatsapp))
     return(data)
 }

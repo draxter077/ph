@@ -1,7 +1,7 @@
 import head from "./head/main.js"
 import content from "./content/main.js"
 
-export default function clients(){
+export default function clients(cs){
     let style = `
         {
             display:flex;
@@ -20,6 +20,6 @@ export default function clients(){
 
     const clients = cE("div",style)
     clients.appendChild(head())
-    clients.appendChild(content())
+    clients.appendChild(content(cs))
     return(clients)
 }

@@ -53,18 +53,17 @@ export default function button() {
                     input.value = `Comando com aspas duplas | ${query}`
                 }
                 else {
-                    // axios.post(`${api_url}/admin/sqlQuery`,{query:query})
-                    // .then(async r => {
-                    //     console.log(r.data)
-                    //     button.innerHTML = `Enviado | ${query}`
-                    //     await new Promise(r => setTimeout(r,2000))
-                    //     button.innerHTML = "Enviar"
-                    //     e.target.parentElement.children[0].value = ""
-                    // })
-                    // .catch(async r => {
-                    //     button.innerHTML = "Tente mais tarde"
-                    // })
-                    input.value = `Enviado | ${query}`
+                    await axios.post(`${api_url}/admin/sqlQuery`,{query:query})
+                    .then(async r => {
+                        console.log(r.data)
+                        button.innerHTML = `Enviado | ${query}`
+                        await new Promise(r => setTimeout(r,5000))
+                        button.innerHTML = "Enviar"
+                        e.target.parentElement.children[0].value = ""
+                    })
+                    .catch(async r => {
+                        button.innerHTML = "Tente mais tarde"
+                    })
                 }
             }
             button.innerHTML = "Enviar"

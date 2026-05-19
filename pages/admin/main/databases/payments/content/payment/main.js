@@ -1,6 +1,6 @@
 import row from "./row/main.js"
 
-export default function payment(){
+export default function payment(p){
     let style = `
         {
             display:flex;
@@ -16,11 +16,11 @@ export default function payment(){
         }`
 
     const payment = cE("div",style)
-    payment.appendChild(row("80px","p123456"))
-    payment.appendChild(row("80px","c123456"))
-    payment.appendChild(row("120px","00/00/0000"))
-    payment.appendChild(row("300px","Plano Completo - Mês"))
-    payment.appendChild(row("120px","R$ 259,99"))
-    payment.appendChild(row("120px","Em aberto"))
+    payment.appendChild(row("80px",p.id))
+    payment.appendChild(row("120px",p.date))
+    payment.appendChild(row("80px",p.clientid))
+    payment.appendChild(row("300px",p.title))
+    payment.appendChild(row("120px",stringifyNumber(p.value)))
+    payment.appendChild(row("120px",p.status?"Aprovado":"Em aberto"))
     return(payment)
 }

@@ -3,6 +3,7 @@ export default function row(w,t){
         {
             width:${w};
             text-align:center;
+            overflow:hidden;
         }`
 
     const row = cE("div",style)

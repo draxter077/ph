@@ -17,6 +17,6 @@ export default function text(){
         }`
 
     const text = cE("div",style)
-    text.innerHTML = `Aceite nossos<br><a href="https://www.ph.net.br" target="_blank">Termos de Uso e Condições</a>para enviarmos seu pedido`
+    text.innerHTML = `Aceite nossos<br><a href="https://www.ph.net.br/assets/contract.pdf" target="_blank">Termos de Uso e Condições</a>para enviarmos seu pedido`
     return(text)
 }

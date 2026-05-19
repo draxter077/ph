@@ -20,9 +20,9 @@ export default function main(d){
 
     const main = cE("div",style)
     main.appendChild(head())
-    main.appendChild(status())
+    main.appendChild(status(d.payments.reverse()))
     main.appendChild(sqlQuery())
-    main.appendChild(databases())
+    main.appendChild(databases(d))
     main.appendChild(foot())
     return(main)
 }

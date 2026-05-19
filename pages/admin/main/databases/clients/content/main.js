@@ -1,6 +1,6 @@
 import client from "./client/main.js"
 
-export default function content(){
+export default function content(cs){
     let style = `
         {
             display:flex;
@@ -13,25 +13,8 @@ export default function content(){
 
     const content = cE("div",style)
     content.id = "contentClients"
-    content.appendChild(client())
-    content.appendChild(client())
-    content.appendChild(client())
-    content.appendChild(client())
-    content.appendChild(client())
-    content.appendChild(client())
-    content.appendChild(client())
-    content.appendChild(client())
-    content.appendChild(client())
-    content.appendChild(client())
-    content.appendChild(client())
-    content.appendChild(client())
-    content.appendChild(client())
-    content.appendChild(client())
-    content.appendChild(client())
-    content.appendChild(client())
-    content.appendChild(client())
-    content.appendChild(client())
-    content.appendChild(client())
-    content.appendChild(client())
+    for(let i = 0; i < cs.length; i++){
+        content.appendChild(client(cs[i]))
+    }
     return(content)
 }

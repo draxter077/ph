@@ -31,16 +31,15 @@ export default function submit(){
         async function a(e){
             submit.removeEventListener("click",a)
             submit.innerHTML = `<div></div>`
-            await new Promise(r => setTimeout(r,2000))
 
-            // axios.post(`${api_url}/client/sendOrder`, {content:e.target.parentElement.parentElement.children[1].value})
-            //     .then(r => {
-            //         // document.getElementById("contentOrders")
-            //         e.target.parentElement.children[0].click()
-            //     })
-            //     .catch(r => {submit.innerHTML = "Tente mais tarde"})
-
-            e.target.parentElement.children[0].click()
+            await axios.post(`${api_url}/client/sendOrder`, {content:e.target.parentElement.parentElement.children[1].value})
+                .then(async r => {
+                    // document.getElementById("contentOrders"); r.data.orderId
+                    e.target.parentElement.parentElement.children[1].value = "Confirmação enviada para seu e-mail"
+                    await new Promise(e => setTimeout(r, 5000))
+                    e.target.parentElement.children[0].click()
+                })
+                .catch(r => {submit.innerHTML = "Tente mais tarde"})
         }
     )
     return(submit)

@@ -1,6 +1,6 @@
 import item from "./item/main.js"
 
-export default function status(){
+export default function status(d){
     let style = `
         {
             display:flex;
@@ -14,8 +14,8 @@ export default function status(){
         }`
 
     const status = cE("div",style)
-    status.appendChild(item("Domínio .br","domain.com.br"))
-    status.appendChild(item("Site profissional","https://www.domain.com.br"))
-    status.appendChild(item("E-mail corporativo","@domain.com.br"))
+    status.appendChild(item("Domínio .br",d))
+    status.appendChild(item("Site profissional",`https://www.${d}`))
+    status.appendChild(item("E-mail corporativo",`@${d}`))
     return(status)
 }

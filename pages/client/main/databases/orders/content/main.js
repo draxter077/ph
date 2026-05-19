@@ -1,6 +1,6 @@
 import order from "./order/main.js"
 
-export default function content(){
+export default function content(os){
     let style = `
         {
             display:flex;
@@ -13,25 +13,8 @@ export default function content(){
 
     const content = cE("div",style)
     content.id = "contentOrders"
-    content.appendChild(order())
-    content.appendChild(order())
-    content.appendChild(order())
-    content.appendChild(order())
-    content.appendChild(order())
-    content.appendChild(order())
-    content.appendChild(order())
-    content.appendChild(order())
-    content.appendChild(order())
-    content.appendChild(order())
-    content.appendChild(order())
-    content.appendChild(order())
-    content.appendChild(order())
-    content.appendChild(order())
-    content.appendChild(order())
-    content.appendChild(order())
-    content.appendChild(order())
-    content.appendChild(order())
-    content.appendChild(order())
-    content.appendChild(order())
+    for(let i = 0; i < os.length; i++){
+        content.appendChild(order(os[i]))
+    }
     return(content)
 }

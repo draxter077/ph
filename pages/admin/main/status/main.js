@@ -1,6 +1,6 @@
 import item from "./item/main.js"
 
-export default function status(){
+export default function status(ps){
     let style = `
         {
             display:flex;
@@ -12,8 +12,27 @@ export default function status(){
         }`
 
     const status = cE("div",style)
-    status.appendChild(item("R$ 000,00","A ser aprovado"))
-    status.appendChild(item("R$ 000,00","Aprovado"))
-    status.appendChild(item("R$ 000,00","Último mês"))
+    let toBeApproved = 0, approved = 0, lastMonthResult = 0;
+    let nowMonth = ps[0].date.split("/")[1], lastMonth = "";
+
+    for(let i = 0; i < ps.length; i++){
+        let m = ps[i].date.split("/")[1]
+        if(m == nowMonth){
+            if(ps[i].status){approved += ps[i].value}
+            else{toBeApproved += ps[i].value}
+        }
+        else if(m != nowMonth && lastMonth == ""){
+            lastMonthResult += ps[i].value
+            lastMonth = m
+            break
+        }
+        else if(m == lastMonth){
+            lastMonthResult += ps[i].value
+        }
+    }
+
+    status.appendChild(item(stringifyNumber(toBeApproved),"A ser aprovado"))
+    status.appendChild(item(stringifyNumber(approved),"Aprovado"))
+    status.appendChild(item(stringifyNumber(lastMonthResult),"Último mês"))
     return(status)
 }

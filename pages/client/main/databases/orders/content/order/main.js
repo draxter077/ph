@@ -1,6 +1,6 @@
 import row from "./row/main.js"
 
-export default function order(){
+export default function order(o){
     let style = `
         {
             display:flex;
@@ -16,8 +16,8 @@ export default function order(){
         }`
 
     const order = cE("div",style)
-    order.appendChild(row("120px","00/00/0000"))
-    order.appendChild(row("300px","Remover sei lá o que sei lá o que"))
-    order.appendChild(row("120px","Em curso"))
+    order.appendChild(row("120px",o.date))
+    order.appendChild(row("300px",o.content))
+    order.appendChild(row("120px",o.status))
     return(order)
 }

@@ -19,8 +19,8 @@ export default function databases(d){
         }`
 
     const databases = cE("div",style)
-    databases.appendChild(payments())
-    databases.appendChild(orders())
-    databases.appendChild(clients())
+    databases.appendChild(payments(d.payments))
+    databases.appendChild(orders(d.orders))
+    databases.appendChild(clients(d.clients))
     return(databases)
 }

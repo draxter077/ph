@@ -1,7 +1,7 @@
 import search from "./search/main.js"
 import button from "./button/main.js"
 
-export default function head(p){
+export default function head(){
     let style = `
         {
             display:flex;
@@ -13,9 +13,6 @@ export default function head(p){
 
     const head = cE("div",style)
     head.appendChild(search())
-
-    let d = new Date().getDate()
-    // Check payments too
-    if(d == 13){head.appendChild(button())}
+    head.appendChild(button())
     return(head)
 }

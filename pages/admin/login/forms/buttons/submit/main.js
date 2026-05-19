@@ -39,24 +39,23 @@ export default function submit(){
             const is = document.getElementById("formsInputs").children
 
             if(is[0].value && is[1].value){
-                // axios.post(`${api_url}/admin/login`, {admin:is[0].value,password:is[1].value})
-                //     .then(async r => {await construct({page:"admin",data:r.data})})
-                //     .catch(async r => {
-                //         if(r.response.status == 403){
-                //             is[1].style = "box-shadow:0px 0px 3px 0px red"
-                //             await new Promise(r => setTimeout(r,600))
-                //             is[1].style = "box-shadow:0px 0px 3px 0px var(--colorBlue)"
-                //         }
-                //         else if(r.response.status == 404){
-                //             is[0].style = "box-shadow:0px 0px 3px 0px red"
-                //             await new Promise(r => setTimeout(r,600))
-                //             is[0].style = "box-shadow:0px 0px 3px 0px var(--colorBlue)"
-                //         }
-                //         else{
-                //             submit.innerHTML = "Tente mais tarde"
-                //         }
-                //     })
-                await construct({page:"admin",data:{user:{id:"teste"}}})
+                await axios.post(`${api_url}/admin/login`, {admin:is[0].value,password:is[1].value})
+                    .then(async r => {await construct({page:"admin",data:r.data})})
+                    .catch(async r => {
+                        if(r.response.status == 403){
+                            is[1].style = "box-shadow:0px 0px 3px 0px red"
+                            await new Promise(r => setTimeout(r,600))
+                            is[1].style = "box-shadow:0px 0px 3px 0px var(--colorBlue)"
+                        }
+                        else if(r.response.status == 404){
+                            is[0].style = "box-shadow:0px 0px 3px 0px red"
+                            await new Promise(r => setTimeout(r,600))
+                            is[0].style = "box-shadow:0px 0px 3px 0px var(--colorBlue)"
+                        }
+                        else{
+                            submit.innerHTML = "Tente mais tarde"
+                        }
+                    })
             }
             else if(is[0].value){
                 is[1].style = "box-shadow:0px 0px 3px 0px red"

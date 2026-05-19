@@ -1,6 +1,6 @@
 import row from "./row/main.js"
 
-export default function client(){
+export default function client(c){
     let style = `
         {
             display:flex;
@@ -16,11 +16,11 @@ export default function client(){
         }`
 
     const client = cE("div",style)
-    client.appendChild(row("80px","c123456"))
-    client.appendChild(row("250px","Nome da Empresa LTDA"))
-    client.appendChild(row("200px","00.000.000/0001-00"))
-    client.appendChild(row("200px","usuario@email.com.br"))
-    client.appendChild(row("180px","(00) 90000-0000"))
-    client.appendChild(row("200px","domain.com.br"))
+    client.appendChild(row("80px",c.id))
+    client.appendChild(row("250px",c.name))
+    client.appendChild(row("200px",c.cnpj))
+    client.appendChild(row("200px",c.email))
+    client.appendChild(row("180px",c.whatsapp))
+    client.appendChild(row("200px",c.domain))
     return(client)
 }

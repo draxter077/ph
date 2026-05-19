@@ -38,26 +38,22 @@ export default function forgot(){
             await new Promise(r => setTimeout(r,2000))
             const is = document.getElementById("formsInputs").children
             if(is[0].value){
-                // axios.post(`${api_url}/client/login`, {domain:is[0].value,password:is[1].value})
-                //     .then(async r => {
-                //         forgot.innerHTML = `Enviada para ${r.datat.email}`
-                //         await new Promise(r => setTimeout(r,4000))
-                //         forgot.innerHTML = "Esqueci a senha"
-                //     })
-                //     .catch(async r => {
-                //         if(r.response.status == 404){
-                //             is[0].style = "box-shadow:0px 0px 3px 0px red"
-                //             await new Promise(r => setTimeout(r,600))
-                //             is[0].style = "box-shadow:0px 0px 3px 0px var(--colorBlue)"
-                //         }
-                //         else{
-                //             forgot.innerHTML = "Tente mais tarde"
-                //         }
-                //     })
-
-                forgot.innerHTML = `Enviada para ${"pipipopo@gmail.com"}`
-                await new Promise(r => setTimeout(r,4000))
-                forgot.innerHTML = "Esqueci a senha"
+                await axios.post(`${api_url}/client/forgotPassword`, {domain:is[0].value})
+                    .then(async r => {
+                        forgot.innerHTML = `Enviada para ${r.data.email}`
+                        await new Promise(r => setTimeout(r,5000))
+                        forgot.innerHTML = "Esqueci a senha"
+                    })
+                    .catch(async r => {
+                        if(r.response.status == 404){
+                            is[0].style = "box-shadow:0px 0px 3px 0px red"
+                            await new Promise(r => setTimeout(r,600))
+                            is[0].style = "box-shadow:0px 0px 3px 0px var(--colorBlue)"
+                        }
+                        else{
+                            forgot.innerHTML = "Tente mais tarde"
+                        }
+                    })
             }
             else{
                 is[0].style = "box-shadow:0px 0px 3px 0px red"
