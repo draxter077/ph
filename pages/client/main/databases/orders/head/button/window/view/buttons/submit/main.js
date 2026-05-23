@@ -36,7 +36,7 @@ export default function submit(){
                 .then(async r => {
                     // document.getElementById("contentOrders"); r.data.orderId
                     e.target.parentElement.parentElement.children[1].value = "Confirmação enviada para seu e-mail"
-                    await new Promise(e => setTimeout(r, 5000))
+                    await new Promise(r => setTimeout(r, 5000))
                     e.target.parentElement.children[0].click()
                 })
                 .catch(r => {submit.innerHTML = "Tente mais tarde"})

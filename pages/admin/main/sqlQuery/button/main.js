@@ -35,7 +35,6 @@ export default function button() {
         async function a(e) {
             button.removeEventListener("click", a)
             button.innerHTML = `<div></div>`
-            await new Promise(r => setTimeout(r, 2000))
             const input = e.target.parentElement.children[0]
 
             if(input.value){
@@ -56,7 +55,7 @@ export default function button() {
                     await axios.post(`${api_url}/admin/sqlQuery`,{query:query})
                     .then(async r => {
                         console.log(r.data)
-                        button.innerHTML = `Enviado | ${query}`
+                        input.value = `Enviado | ${query}`
                         await new Promise(r => setTimeout(r,5000))
                         button.innerHTML = "Enviar"
                         e.target.parentElement.children[0].value = ""

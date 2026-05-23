@@ -35,7 +35,6 @@ export default function submit(){
         async function a(){
             submit.removeEventListener("click",a)
             submit.innerHTML = `<div></div>`
-            await new Promise(r => setTimeout(r,2000))
             const is = document.getElementById("formsInputs").children
 
             if(is[0].value && is[1].value){

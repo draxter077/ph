@@ -35,7 +35,6 @@ export default function forgot(){
         async function a(){
             forgot.removeEventListener("click",a)
             forgot.innerHTML = `<div></div>`
-            await new Promise(r => setTimeout(r,2000))
             const is = document.getElementById("formsInputs").children
             if(is[0].value){
                 await axios.post(`${api_url}/client/forgotPassword`, {domain:is[0].value})

@@ -46,7 +46,7 @@ export default function resume(){
                 await new Promise(r => setTimeout(r,100))
                 w.style.opacity = 1
             }
-            else if(e.style.transform == "translateX(-50%)" && document.getElementById("builderChat").style == "opacity:1"){ // página confirmação
+            else if(e.style.transform == "translateX(-50%)"){ // página confirmação
                 resume.children[0].innerHTML = "Confirmar"
                 e.style.transform = "translateX(-75%)"
                 p.style.width = "100%"
@@ -64,11 +64,13 @@ export default function resume(){
                     }
                 }
                 if(ws){
+                    resume.removeEventListener("click",a)
                     const ifr = document.getElementById("builderIframe")
                     axios.post(`${api_url}/contract_plan_sade/builder`, {name:inputs[2].children[1].value,sector:inputs[4].children[1].value,goals:inputs[5].children[1].value})
                        .then(r => {
                             ifr.srcdoc = r.data.html
                             document.getElementById("builderChat").style = "opacity:1"
+                            resume.addEventListener("click",a)
                         })
                        .catch(r => {ifr.srcdoc = `Error: ${r}`})
                     e.style.transform = "translateX(-50%)"
