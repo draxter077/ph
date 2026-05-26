@@ -17,7 +17,7 @@ export default function main(){
         "taxID":"62.797.808/0001-41",
         "image":"https://www.ph.net.br/assets/logo.jpg",
         "email":"contato@ph.net.br",
-        "telephone":"+55 (41) 99171-8360",
+        "telephone":"+55 (41) 3798-9812",
         "slogan":"Transformamos sua ideia em uma realidade no mundo digital",
         "description":"Focados em criação de sites profissionais, que expressem a identidade do seu projeto sem deixar de gerar resultado e conexão com seus clientes. Nossos sites são de alta performance, desenvolvidos segundo as últimas recomendações de SEO (Google) e UX (experiência de usuário) e otimizados para a geração de leads, fortalecendo o crescimento do seu negócio. Criamos sites para advogados, psicólogos, engenheiros, arquitetos, médicos, dentistas, contadores, consultores e qualquer outro negócio que queira fortalecer sua presença digital",
         "areaServed":"BR",

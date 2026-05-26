@@ -217,7 +217,7 @@ window.construct = async function construct(d){
 }
 
 window.api_url = "https://ace-chimp-merry.ngrok-free.app/ph"
-window.whatsapp_url = "https://wa.me"
+window.whatsapp_url = "https://wa.me/554137989812"
 window.instagram_url = "https://www.instagram.com/phwebsoftware"
 axios.defaults.headers.common["ngrok-skip-browser-warning"] = "69420"
 
