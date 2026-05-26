@@ -9,6 +9,9 @@ export default function resume(){
             display:flex;
             flex-direction:row;
             align-items:center;
+            background:var(--colorBlue);
+            padding:10px 15px;
+            border-radius:50px;
             transform:translateX(0%);
             cursor:pointer;
             transition:all 0.5s;
@@ -77,7 +80,7 @@ export default function resume(){
                     p.style.width = "66%"
                 }
                 else{
-                    await new Promise(r => setTimeout(r,550))
+                    await new Promise(r => setTimeout(r,1100))
                 }
                 for(let i = 0; i < inputs.length; i++){
                     if(inputs[i].children[1].value.length == 0){

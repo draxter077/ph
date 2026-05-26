@@ -21,7 +21,7 @@ export default function text(){
     const text = cE("textarea",style)
     text.id = "builderChat"
     text.rows = 10
-    text.placeholder = "Escreva aqui o que deseja alterar\nQuando estiver satisfeito, clique em continuar"
+    text.placeholder = "Escreva aqui o que gostou, o que faltou e quais alterações deseja.\nQuando estiver satisfeito, clique em continuar"
     text.tabIndex=-1
     return(text)
 }

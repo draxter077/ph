@@ -3,7 +3,7 @@ export default function text(){
         {
             font-size:18px;
             font-weight:900;
-            color:var(--colorWhite);
+            color:var(--colorBlack);
         }`
 
     const text = cE("div",style)

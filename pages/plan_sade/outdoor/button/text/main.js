@@ -6,6 +6,6 @@ export default function text(){
         }`
 
     const text = cE("div",style)
-    text.innerHTML = "Transforme sua ideia"
+    text.innerHTML = "Entre no mundo digital"
     return(text)
 }
