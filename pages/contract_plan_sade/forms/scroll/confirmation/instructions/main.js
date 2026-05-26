@@ -10,6 +10,6 @@ export default function instructions(){
         }`
 
     const instructions = cE("div",style)
-    instructions.innerHTML = "Agora é só clicar em confirmar.<br><br>Receberemos seu pedido e logo mais entraremos em contato pelo e-mail <span>EMAIL</span> ou pelo WhatsApp <span>WHATSAPP</span>, por isso fique atento nesses meios!<br><br>Novamente, <span>o rascunho do seu site não é a versão final dele</span>: ainda vamos atualizar o design dele, aplicando as últimas novidades de experiência de usuário (UX) e otimizando ele para SEO/Google.<br><br><span>Confirme e nos vemos em breve!</span>"
+    instructions.innerHTML = "Agora é só clicar em confirmar.<br><br>Nossos designers vão analisar suas observações e lapidar o projeto. Quando o design definitivo estiver pronto, entraremos em contato pelo e-mail <span>EMAIL</span> e pelo WhatsApp <span>WHATSAPP</span> para te apresentar o resultado e definirmos juntos os detalhes do seu domínio .com.br e e-mails corporativos.<br><br><span>Sua ideia está se tornando realidade!</span>"
     return(instructions)
 }
