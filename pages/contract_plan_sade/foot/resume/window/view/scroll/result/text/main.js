@@ -17,6 +17,6 @@ export default function text(e,w){
         }`
 
     const text = cE("div",style)
-    text.innerHTML = `<span>Boas notícias: recebemos seu pedido!</span><br>E já começamos a trabalhar nele!<br><br>Enviamos um e-mail para ${e}<br>Aguarde nosso contato no ${w}<br><br>Agradecemos sua confiança!`
+    text.innerHTML = `<span>Boas notícias: recebemos seu pedido!</span><br>E já começamos a trabalhar nele!<br><br>Enviamos um e-mail para ${e}<br>Aguarde nosso contato no ${w}<br><br>Estamos ansiosos para te mostrar o resultado!`
     return(text)
 }
