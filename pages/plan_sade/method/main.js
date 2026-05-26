@@ -32,9 +32,11 @@ export default function method(){
         {img:"/assets/icons/responsive.png",title:"Design responsivo",description:"Para todos os clientes"},
         {img:"/assets/icons/code.png",title:"Leve e rápido",description:"Do jeito que seu cliente gosta"},
         {img:"/assets/icons/marketing.png",title:"Gerador de tráfego orgânico",description:"O holofote estará em você"},
+        {img:"/assets/icons/target.png",title:"Baseado no seu público alvo",description:"Descobrimos o que seu público está procurando"},
         {img:"/assets/icons/analysis.png",title:"Alinhados com seu setor",description:"Estudamos seus concorrentes para você ficar na frente"},
         {img:"/assets/icons/global.png",title:"Exatamente como você precisava",description:"Somos a sua solução completa"}
     ]))
+
     window.addEventListener(
         "scroll",
         async function a(){
