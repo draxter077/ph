@@ -41,7 +41,7 @@ export default function plans(){
                 {img:"/assets/icons/refresh.png",text:"Até 3 atualizações"}
             ],
             price:"A partir de R$ <span>1.599,99</span>",
-            href:"/"
+            href:"/plano_completo"
         }
     ))
     plans.appendChild(plan(
@@ -52,7 +52,7 @@ export default function plans(){
                 {img:"/assets/icons/www.png",text:"Desenvolvemos softwares empresariais do tipo CRM, ERP, e-commerce, BI, SAE, SAD, SIE, SCM, entre outros"},
             ],
             price:"<span>Entre em contato</span>",
-            href:"/"
+            href:"/plano_completo"
         }
     ))
     return(plans)
