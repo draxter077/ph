@@ -3,7 +3,8 @@ export default function text(){
         {
             font-size:14px;
             padding:5px 10px;
-            box-shadow:0px 0px 2px 0px var(--colorWhite);
+            margin:0px 0px 0px 10px;
+            box-shadow:0px 0px 2px 1px var(--colorWhite);
             color:var(--colorWhite);
             border-radius:5px;
             width:33%;
