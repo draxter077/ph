@@ -11,6 +11,9 @@ export default function foot(){
             justify-content:space-around;
             width:90%;
             padding:1% 0px;
+        }
+        :responsive{
+            padding:2.5% 0px;
         }`
 
     const foot = cE("div",style)
