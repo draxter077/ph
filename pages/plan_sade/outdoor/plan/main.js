@@ -28,6 +28,7 @@ export default function plan(){
                 {img:"/assets/icons/domain.png",text:"Domínio .br"},
                 {img:"/assets/icons/www.png",text:"Site profissional"},
                 {img:"/assets/icons/email.png",text:"E-mail corporativo"},
+                {img:"/assets/icons/google.png",text:"Google Empresas"},
                 {img:"/assets/icons/refresh.png",text:"Atualizações ilimitadas"},
                 {img:"/assets/icons/settings.png",text:"Suporte técnico 24/7"}
             ]))

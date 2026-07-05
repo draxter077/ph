@@ -24,6 +24,7 @@ export default function plans(){
                 {img:"/assets/icons/domain.png",text:"Domínio .br"},
                 {img:"/assets/icons/www.png",text:"Site profissional"},
                 {img:"/assets/icons/email.png",text:"E-mail corporativo"},
+                {img:"/assets/icons/google.png",text:"Google Empresas"},
                 {img:"/assets/icons/refresh.png",text:"Atualizações ilimitadas"},
                 {img:"/assets/icons/settings.png",text:"Suporte técnico 24/7"}
             ],
@@ -50,6 +51,17 @@ export default function plans(){
             description:"Para necessidades robustas",
             items:[
                 {img:"/assets/icons/www.png",text:"Desenvolvemos softwares empresariais do tipo CRM, ERP, e-commerce, BI, SAE, SAD, SIE, SCM, entre outros"},
+            ],
+            price:"<span>Entre em contato</span>",
+            href:"/plano_completo"
+        }
+    ))
+    plans.appendChild(plan(
+        {
+            title:"Marketing Digital",
+            description:"Para alavancar sua presença digital",
+            items:[
+                {img:"/assets/icons/google.png",text:"Gestão do Google Ads"},
             ],
             price:"<span>Entre em contato</span>",
             href:"/plano_completo"

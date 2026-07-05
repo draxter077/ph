@@ -12,7 +12,7 @@ export default function plan(p){
             box-shadow:0px 0px 3px 0px var(--colorBlue);
             border-radius:10px;
             padding:10px 15px;
-            width:30%;
+            width:24%;
             transition:all 0.5s;
         }
         :responsive{
